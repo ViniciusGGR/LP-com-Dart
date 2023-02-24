@@ -18,3 +18,43 @@ A função ``print()`` é muito utilizada no desenvolvimento. A função ``print
 
 **Comando para executar um arquivo ``.dart``**:
 - ``dart run file_name.dart`` ou ``dart file_name.dart``.
+
+---
+
+## Conceitos Básicos - Variáveis
+
+**O que é uma variável?**
+
+- Uma variável é uma _propriedade_, um **lugar/espaço reservado** na memória que é responsável por guardar informações.
+- Em um código é possível criar uma variável para armazenar: nome, idade, altura, peso, e-mail, senha...
+
+[**Arquivo - _variables.dart_**](./variables.dart)
+
+**Criando a primeira variável:**
+
+``var name;``
+
+Para criar uma variável é necessário o uso da palavra-chave ``var``, ``String``, ``int``, ``double`` ou ``bool``.
+
+> No Dart, os nomes de variáveis devem seguir o padrão **camelCase** que define que as palavras compostas ou frases, onde cada palavra é iniciada com maiúsculas (exceto a primeira) e ficam unidas sem espaços. 
+
+**Adicionando/Instanciando um valor inicial:**
+
+```
+var name;
+name = "Vinícius Gabriel";
+```
+
+**Utilizando a variável na função ``print()``:**
+
+```
+var name;
+name = "Vinícius Gabriel";
+
+print(name);
+```
+
+Quando uma variável não possui um valor instanciado, e esse variável é chamada em uma função ``print()``, ela retornará um valor **``null``**.
+- **``null``**  -  Na programação ``null`` significa que _não tem nada, não possui nenhum dado._
+
+---
