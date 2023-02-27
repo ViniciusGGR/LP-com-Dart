@@ -54,3 +54,21 @@ Existem algumas formas de declarar o **tipo inteiro** no Dart:
 - Declaração com o _Tipo explícito_ **int**: ``int myInteger;``
     - Declaração com o _Tipo explícito_ **int**, com o valor inicial já atribuido: ``int myInteger = 1;``
     > O tipo ``int`` garante que a variável só receba **valores inteiros**.
+
+### Int - Boas Práticas:
+
+Boas práticas para se declarar números inteiros.
+
+Variáveis que são declaradas com um valor inicial, devem ser declaradas com a palavra-chave ``var``, o uso da palavra-chave ``int`` nesse caso é errado.
+- Por exemplo: ``var a = 1;``
+    - Isso acontece, pois já se sabe que essa variável é do _tipo inteiro_, por isso o uso da palavra-chave ``int`` é desnecessária.
+        - Por exemplo: ``int a = 1;``. Essa declaração é considerada uma má prática no Dart.
+
+Para declarar uma variável do tipo ``int``, que terá seu valor atribuido posteriormente, será necessário informar que a variável pode ser anulável, ou pode ser uma variável do **tipo late**.
+- Por exemplo:
+    ```
+    int a;
+    a = 1;
+    ```
+    - Esse código só poderá ser executado se a variável for anulável ``int? a;``, ou ser do tipo late ``late int a;``.
+    - O **tipo late** define que a variável será instanciada posteriormente.
