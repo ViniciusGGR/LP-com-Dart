@@ -31,3 +31,15 @@ Ao utilizar os _Operadores Relacionais_, o resultado dessas comparações sempre
 
 ---
 
+## Int - Introdução
+
+O Tipo de dado ``int`` serve para representar os números inteiros da matemática no Dart.
+
+**Números inteiros** são números positivos e negativos que não apresentam casa decimal.
+- Os números inteiros são utilizados para definir quantidade de usuários, carros em um estacionamento, valor monetário...
+
+Para representar um _número inteiro_ em Dart, é necessário o uso da palavra-chave ``int``. O uso dessa palavra-chave indica ao Dart que está sendo "criada uma variável" que **receberá somente valores inteiros**.
+
+``int myVariable;``.
+
+[**Arquivo - _int.dart_**](./int.dart)
