@@ -43,3 +43,14 @@ Para representar um _número inteiro_ em Dart, é necessário o uso da palavra-c
 ``int myVariable;``.
 
 [**Arquivo - _int.dart_**](./int.dart)
+
+### Int - Declaração:
+
+Existem algumas formas de declarar o **tipo inteiro** no Dart:
+
+- Declaração com o _Tipo dinâmico_: ``var myInteger;``
+    - Declaração com o _Tipo dinâmico_, com o valor inicial já atribuido: ``var myInteger = 1;``
+    > O tipo ``var`` não define um tipo específico para a variável, podendo assim receber valores de qualquer tipo.
+- Declaração com o _Tipo explícito_ **int**: ``int myInteger;``
+    - Declaração com o _Tipo explícito_ **int**, com o valor inicial já atribuido: ``int myInteger = 1;``
+    > O tipo ``int`` garante que a variável só receba **valores inteiros**.
