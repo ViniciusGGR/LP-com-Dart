@@ -8,6 +8,7 @@
     - [Int - Boas Práticas:](#int---boas-práticas)
     - [Int - Funcionalidades:](#int---funcionalidades)
     - [Int - Operadores:](#int---operadores)
+- [Double - Introdução](#double---introdução)
 
 ---
 
@@ -160,4 +161,7 @@ Operadores aritméticos em Dart.
     var division2 = a ~/ b;
     print(division2);    // Retorna: 0
     ```
+
 ---
+
+## Double - Introdução
