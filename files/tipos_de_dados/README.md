@@ -1,5 +1,13 @@
 # Tipos de Dados
 
+### Sumário:
+
+- [Bool](#bool)
+- [Int - Introdução](#int---introdução)
+    - [Int - Declaração:](#int---declaração)
+    - [Int - Boas Práticas:](#int---boas-práticas)
+    - [Int - Funcionalidades:](#int---funcionalidades)
+
 ---
 
 ## Bool
@@ -72,3 +80,9 @@ Para declarar uma variável do tipo ``int``, que terá seu valor atribuido poste
     ```
     - Esse código só poderá ser executado se a variável for anulável ``int? a;``, ou ser do tipo late ``late int a;``.
     - O **tipo late** define que a variável será instanciada posteriormente.
+
+### Int - Funcionalidades:
+
+Operadores que podem ser utilizados com os números inteiros.
+
+- Incrementando 1 ao valor de uma variável.
