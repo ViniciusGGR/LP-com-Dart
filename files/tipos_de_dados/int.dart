@@ -58,4 +58,28 @@ void main() {
 
   // Imprimindo o valor da variável 'number2' mais 3, no caso, o resultado é 5.
   print(number2);
+
+  // Operadores aritméticos:
+  var a = 5;
+  var b = 7;
+
+  // Operador '+' - Soma/Concatena dois ou mais valores.
+  var sum = a + b;
+  print(sum);
+
+  // Operador '-' - Subtrai dois ou mais valores.
+  var subtraction = a - b;
+  print(subtraction);
+
+  // Operador '*' - Multiplica dois ou mais valores.
+  var multiplication = a * b;
+  print(multiplication);
+
+  // Operador '/' - Dividi dois valores.
+  var division  = a / b;
+  print(division);
+
+  // Divisão com resultado inteiro é feita com o operador '~/'.
+  var division2 = a ~/ b;
+  print(division2);
 }

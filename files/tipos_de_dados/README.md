@@ -7,6 +7,7 @@
     - [Int - Declaração:](#int---declaração)
     - [Int - Boas Práticas:](#int---boas-práticas)
     - [Int - Funcionalidades:](#int---funcionalidades)
+    - [Int - Operadores:](#int---operadores)
 
 ---
 
@@ -108,4 +109,55 @@ Operadores que podem ser utilizados com os números inteiros.
 
     > O método ``tryParse(variable)`` serve para converter tipos de dados em outros, mas podendo retornar um **null**.
 
+### Int - Operadores:
 
+Operadores aritméticos em Dart.
+
+- Soma **``+``**:
+    - Realiza a **soma/concatenação** de duas ou mais variáveis.
+    ```
+    var a = 5;
+    var b = 7;
+
+    var sum = a + b;
+    print(sum);    // Retorna: 12
+    ```
+
+- Subtração **``-``**:
+    - Realiza a **subtração** entre duas ou mais variáveis.
+    ```
+    var a = 5;
+    var b = 7;
+
+    var subtraction = a - b;
+    print(subtraction);    // Retorna: -2
+    ```
+
+- Multiplicação **``*``**:
+    - Realiza a **multiplicação** entre duas ou mais variáveis.
+    ```
+    var a = 5;
+    var b = 7;
+
+    var multiplication = a * b;
+    print(multiplication);    // Retorna: 35
+    ```
+
+- Divisão **``/``**:
+    - Realiza a **divisão** entre duas variáveis.
+    ```
+    var a = 5;
+    var b = 7;
+
+    var division  = a / b;
+    print(division);    // Retorna: 0.7142857142857143
+    ```
+    - O operador **``~/``** realiza a divisão e retorna somente a parte **inteira** do resultado.
+    ```
+    var a = 5;
+    var b = 7;
+    
+    var division2 = a ~/ b;
+    print(division2);    // Retorna: 0
+    ```
+---
