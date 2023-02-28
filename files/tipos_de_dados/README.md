@@ -85,4 +85,27 @@ Para declarar uma variável do tipo ``int``, que terá seu valor atribuido poste
 
 Operadores que podem ser utilizados com os números inteiros.
 
-- Incrementando 1 ao valor de uma variável.
+- Incrementar 1 ao valor de uma variável.
+    - O operador **``++``**, serve para incrementar 1 ao valor de uma variável: ``variable++;``.
+    - Esse operador ``++`` substitui o uso: ``variable = variable + 1;``.
+
+- Decrementar 1 ao valor de uma variável.
+    - O operador **``--``**, serve para decrementar 1 ao valor de uma variável: ``variable--;``.
+    - Esse operador ``--`` substitui o uso: ``variable = variable - 1;``.
+
+- Incrementar um **valor específico** ao valor de uma variável.
+    - O operador **``+=number``**, serve para incrementar um _valor específico_ a uma variável: ``variable += 5;``.
+    - Esse operador ``+=number`` substitui o uso: ``variable = variable + number;``.
+
+- Decrementar um **valor específico** ao valor de uma variável.
+    - O operador **``-=number``**, serve para decrementar um _valor específico_ a uma variável: ``variable -= 5;``.
+    - Esse operador ``-=number`` substitui o uso: ``variable = variable - number;``.
+
+- "Transformando" um texto (String) numérica em um número inteiro ``int``.
+    - Por exemplo: ``var text = "1";``. Transformando esse valor "1" em um número inteiro 1.
+    - O método ``int.parse(variable)`` serve para "transformar" tipos.
+    - Após utilizar o ``int.parse(variable)`` é possível utilizar outros operadores para manipulação desse resultado.
+
+    > O método ``tryParse(variable)`` serve para converter tipos de dados em outros, mas podendo retornar um **null**.
+
+
