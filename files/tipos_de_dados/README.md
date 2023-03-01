@@ -10,6 +10,8 @@
     - [Int - Operadores:](#int---operadores)
 - [Double - Introdução](#double---introdução)
     - [Double - Declaração:](#double---declaração)
+    - [Double - Boas Práticas:](#double---boas-práticas)
+    - [Double - Operadores:](#double---operadores)
 
 ---
 
@@ -196,3 +198,16 @@ Formas de declaração de uma variável ``double`` em Dart.
 - Declaração com o _Tipo explícito_ **double**: ``double myDouble;``
     - Declaração com o _Tipo explícito_ **double**, com o valor inicial já atribuido: ``double myDouble = 1.91;``
     > O tipo ``double`` garante que a variável só receba **valores decimais**
+
+### Double - Boas Práticas:
+
+Boas práticas com o uso do tipo ``double``.
+
+Variáveis que são declaradas com um valor inicial, devem ser declaradas com a palavra-chave ``var``, o uso da palavra-chave ``double`` nesse caso é errado.
+- Por exemplo: ``var a = 1.91;``
+    - Isso acontece, pois já se sabe que essa variável é do _tipo double_, por isso o uso da palavra-chave ``double`` é desnecessária, pois a variável estará sendo **tipada** duas vezes..
+        - Por exemplo: ``double a = 1.91;``. Essa declaração é considerada uma má prática no Dart.
+
+### Double - Operadores:
+
+
