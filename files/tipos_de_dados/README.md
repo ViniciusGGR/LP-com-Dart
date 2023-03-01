@@ -334,6 +334,21 @@ Dentro da propriedade ``Duration()`` é possível utilizar **Dias, Horas, Minuto
         final duration = Duration(days: 100);
         print(duration.inMinutes);    // '100 dias' é equivalente a '144000 minutos'.
         ```
-    ...
 
 O ``Duration()`` permite a manipulação desses dados para uma melhor visualização e encontrar o dado mais apropriado para o seu uso.
+
+Propriedades do ``Duration``:
+
+- **Propriedade de soma**: Permite realizar a operação de soma dentro de um ``duration`` (duração).
+- **Propriedade de comparação**: o ``.compareTo()`` Permite comparar o resultado de uma **duração** com a outra.
+    - Na comparação, se o resultado for igual a 0, significa que as duas **durações** são iguais.
+
+    - Se o resultado for um valor negativo, significa que o primeiro item da comparação é menor que o segundo item.
+    
+    - Se o resultado for um valor maior que zero, significa que o primeiro item é maior que o segundo item.
+
+---
+
+## DateTime
+
+
