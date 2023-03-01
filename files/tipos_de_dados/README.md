@@ -12,6 +12,7 @@
     - [Double - Declaração:](#double---declaração)
     - [Double - Boas Práticas:](#double---boas-práticas)
     - [Double - Operadores:](#double---operadores)
+    - [Double - Funcionalidades:](#double---funcionalidades)
 
 ---
 
@@ -209,5 +210,57 @@ Variáveis que são declaradas com um valor inicial, devem ser declaradas com a 
         - Por exemplo: ``double a = 1.91;``. Essa declaração é considerada uma má prática no Dart.
 
 ### Double - Operadores:
+
+Operadores aritméticos em Dart, utilizando o ``double``.
+
+- Soma **``+``**:
+    - Realiza a **soma/concatenação** de duas ou mais variáveis.
+    ```
+    var a = 12.6;
+    var b = 6.2;
+
+    var sum = a + b;
+    print(sum);    // Retorna: 18.8
+    ```
+
+- Subtração **``-``**:
+    - Realiza a **subtração** entre duas ou mais variáveis.
+    ```
+    var a = 12.6;
+    var b = 6.2;
+
+    var subtraction = a - b;
+    print(subtraction);    // Retorna: 6.3999999999999995
+    ```
+
+- Multiplicação **``*``**:
+    - Realiza a **multiplicação** entre duas ou mais variáveis.
+    ```
+    var a = 12.6;
+    var b = 6.2;
+
+    var multiplication = a * b;
+    print(multiplication);    // Retorna: 78.12
+    ```
+
+- Divisão **``/``**:
+    - Realiza a **divisão** entre duas variáveis.
+    ```
+    var a = 12.6;
+    var b = 6.2;
+
+    var division  = a / b;
+    print(division);    // Retorna: 2.032258064516129
+    ```
+    - O operador **``~/``** realiza a divisão e retorna somente a parte **inteira** do resultado.
+    ```
+    var a = 12.6;
+    var b = 6.2;
+    
+    var division2 = a ~/ b;
+    print(division2);    // Retorna: 2
+    ```
+
+### Double - Funcionalidades:
 
 
