@@ -13,6 +13,7 @@
     - [Double - Boas Práticas:](#double---boas-práticas)
     - [Double - Operadores:](#double---operadores)
     - [Double - Funcionalidades:](#double---funcionalidades)
+- [Duration](#duration)
 
 ---
 
@@ -291,5 +292,7 @@ Funcionalidades/Atalhos utilizando o tipo ``double``
     - O método ``tryParse(variable)`` é utilizado quando não se tem certeza se será possível fazer o "parse" do número presente na variável. Esse método previne que a aplicação não tenha nenhum tipo de "quebra".
 
 ---
+
+## Duration
 
 
