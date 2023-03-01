@@ -263,4 +263,33 @@ Operadores aritméticos em Dart, utilizando o ``double``.
 
 ### Double - Funcionalidades:
 
+Funcionalidades/Atalhos utilizando o tipo ``double``
+
+- Incrementar 1 ao valor de uma variável.
+    - O operador **``++``**, serve para incrementar 1 ao valor de uma variável: ``variable++;``.
+    - Esse operador ``++`` substitui o uso: ``variable = variable + 1;``.
+
+- Decrementar 1 ao valor de uma variável.
+    - O operador **``--``**, serve para decrementar 1 ao valor de uma variável: ``variable--;``.
+    - Esse operador ``--`` substitui o uso: ``variable = variable - 1;``.
+
+- Incrementar um **valor específico** ao valor de uma variável.
+    - O operador **``+=number``**, serve para incrementar um _valor específico_ a uma variável: ``variable += 5.5;``.
+    - Esse operador ``+=number`` substitui o uso: ``variable = variable + number;``.
+
+- Decrementar um **valor específico** ao valor de uma variável.
+    - O operador **``-=number``**, serve para decrementar um _valor específico_ a uma variável: ``variable -= 5.5;``.
+    - Esse operador ``-=number`` substitui o uso: ``variable = variable - number;``.
+
+- "Transformando" um texto (String) numérica em um número inteiro ``int``.
+    - Por exemplo: ``var text = "10.2";``. Transformando esse valor "10.2" em um número decimal 10.2.
+    - O método ``double.parse(variable)`` serve para "transformar" tipos.
+    - Após utilizar o ``double.parse(variable)`` é possível utilizar outros operadores para manipulação desse resultado.
+
+    > O método ``tryParse(variable)`` serve para converter tipos de dados em outros, mas podendo retornar um **null**.
+
+    - O método ``tryParse(variable)`` é utilizado quando não se tem certeza se será possível fazer o "parse" do número presente na variável. Esse método previne que a aplicação não tenha nenhum tipo de "quebra".
+
+---
+
 
