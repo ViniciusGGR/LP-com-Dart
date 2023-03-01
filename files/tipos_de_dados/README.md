@@ -165,3 +165,17 @@ Operadores aritméticos em Dart.
 ---
 
 ## Double - Introdução
+
+Representando os números decimais no Dart.
+
+[**Arquivo - _double.dart_**](./double.dart)
+
+Os números decimais/double/flutuantes são números que possuem casas decimais, por exemplo: 1.10, 2.25, 3.2...
+
+> Normalmente os números decimais são representados com o uso da vírgula (**,**), mas na programação essa representação é feita com o ponto (**.**).
+
+Os números decimais em Dart são representados pelo tipo **``double``**.
+
+- Exemplos de uso do tipo ``double``: Peso, Altura, Distância, Litros de gasolina...
+
+Declarando/Instanciando um número decimal em Dart: ``double a;`` ou ``double a = 1.91;``.
