@@ -14,6 +14,7 @@
     - [Double - Operadores:](#double---operadores)
     - [Double - Funcionalidades:](#double---funcionalidades)
 - [Duration](#duration)
+- [DateTime](#datetime)
 
 ---
 
