@@ -9,6 +9,7 @@
     - [Int - Funcionalidades:](#int---funcionalidades)
     - [Int - Operadores:](#int---operadores)
 - [Double - Introdução](#double---introdução)
+    - [Double - Declaração:](#double---declaração)
 
 ---
 
@@ -179,3 +180,19 @@ Os números decimais em Dart são representados pelo tipo **``double``**.
 - Exemplos de uso do tipo ``double``: Peso, Altura, Distância, Litros de gasolina...
 
 Declarando/Instanciando um número decimal em Dart: ``double a;`` ou ``double a = 1.91;``.
+
+### Double - Declaração:
+
+Formas de declaração de uma variável ``double`` em Dart.
+
+- Declaração com o _Tipo dinâmico_, com uso da palavra-chave **var**: ``var myDouble;``
+    ```
+    var a;
+    a = 1.91;
+    ```
+    - Declaração com o _Tipo dinâmico_, com o valor inicial já atribuido: ``var myDouble = 1.91;``
+    > O tipo ``var`` não define um tipo específico para a variável, podendo assim receber valores de qualquer tipo.
+
+- Declaração com o _Tipo explícito_ **double**: ``double myDouble;``
+    - Declaração com o _Tipo explícito_ **double**, com o valor inicial já atribuido: ``double myDouble = 1.91;``
+    > O tipo ``double`` garante que a variável só receba **valores decimais**
