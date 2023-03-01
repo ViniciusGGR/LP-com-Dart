@@ -295,4 +295,45 @@ Funcionalidades/Atalhos utilizando o tipo ``double``
 
 ## Duration
 
+Tipo de dado ``duration`` em Dart.
 
+O tipo de dado em Dart ``duration`` nada mais é que uma **duração**.
+
+[**Arquivo - _duration.dart_**](./duration.dart)
+
+Exemplo de uso do ``duration``:
+
+- Ao trabalhar com comparação de datas, normalmente é possível utilizar um ```duration`` (duração) para adiantar dias em uma data, colocar horas a mais em uma data.
+- Utilizar o ``duration`` junto com a função **timer** do Dart para ficar fazendo _loop_ a cada 5 segundos, chamando o **request** de uma API.
+
+Declarando um ``Duration()``:
+
+```
+final duration = Duration();
+print(duration);    // Retorna: 0:00:00.000000
+```
+
+Dentro da propriedade ``Duration()`` é possível utilizar **Dias, Horas, Minutos, Segundos, Milissegundo e Microssegundos**
+
+- Duration em **days** (dias): ``final duration = Duration(days: 100);``
+- Propriedades do ``Duration()`` que ajudam na visualização:
+    - Visualizar a **duração** em dias:
+        ```
+        final duration = Duration(days: 100);
+        print(duration.inDays);
+        ```
+    
+    - Visualizar a **duração** em horas:
+        ```
+        final duration = Duration(days: 100);
+        print(duration.inHours);    // '100 dias' é equivalente a '2400 horas'.
+        ```
+    
+    - Visualizar a **duração** em minutos:
+        ```
+        final duration = Duration(days: 100);
+        print(duration.inMinutes);    // '100 dias' é equivalente a '144000 minutos'.
+        ```
+    ...
+
+O ``Duration()`` permite a manipulação desses dados para uma melhor visualização e encontrar o dado mais apropriado para o seu uso.
