@@ -348,4 +348,113 @@ Propriedades do ``Duration``:
 
 ## DateTime
 
+O Tipo de dado ``DateTime`` do Dart serve para calcular datas e horários. Praticamente todo software utiliza **datas** para fazer filtro, comparações... E o Dart tem várias propriedades no ``DateTime`` que facilitam o desenvolvimento.
 
+[**Arquivo - _Date_Time.dart_**](./Date_Time.dart)
+
+Entendendo a classe ``DateTime()``:
+- Essa classe é utilizada para criar uma data.
+    ```
+    var date = DateTime(2023);
+    print(date);    // Retorna: 2023-01-01 00:00:00.000
+    ```
+    - A data com o ``DateTime()`` é representada por **yyyy-mm-dd**.
+    
+    > O Package **intl** disponível no _pub.dev_ serve para formatação de datas.
+
+    - Imprimindo data e hora de aniversário:
+    ```
+    var birthday = DateTime(2001, 1, 5, 10, 50);
+    print(birthday);    // Retornando data de aniversário: 2001-01-05 10:50:00.000
+    ```
+
+- Transformando/Parse de uma **String** em um ``DateTime``:
+    - A propriedade ``.parse()`` do **DateTime**, serve para transformar uma **String** "formatada" em um tipo ``DateTime``.
+        ```
+        final parseDate = DateTime.parse('1974-07-20 08:40:25Z');
+        print(parseDate);    // Retorna: 1974-07-20 08:40:25.000Z
+        ```
+
+- ``DateTime`` que utiliza a propriedade ``.utc()``, que é um tipo de data referente a primeira data do computador, que foi declarada em 1970-01-01. Então é uma data em relação a essa primeira data. UTC - (Coordinated Universal Time)
+    > Todo computador trabalha com referência em UTC. Isso serve para não ter problema com diferença de horas no servidores e computadores.
+
+    ```
+    final dateUTC = DateTime.utc(2023, 1, 14);
+    print(dateUTC);    // Retorna: 2023-01-14 00:00:00.000Z
+    ```
+
+- A propriedade ``.now()`` do ``DateTime`` serve para pegar a hora atual do computador.
+    ```
+    final dateNow = DateTime.now();
+    print(dateNow);    // Retorna: O ano, mês, dia, hora, minuto, segundo e milissegundo atual do computador.
+    ```
+
+    - Formatando a visualização da data atual:
+        ```
+        // Imprimindo somente a hora atual.
+        print("HORAS: ${dateNow.hour}");
+
+        // Imprimindo somente o minuto atual.
+        print("MINUTO: ${dateNow.minute}");
+
+        // Imprimindo somente o segundo atual.
+        print("SEGUNDO: ${dateNow.second}");
+
+        // Imprimindo somente o ano atual.
+        print("ANO: ${dateNow.year}");
+
+        // Imprimindo somente o mês atual.
+        print("MÊS: ${dateNow.month}");
+
+        // Imprimindo somente o dia atual.
+        print("DIA: ${dateNow.day}");
+        ```
+
+- Fazendo operações com a propriedade ``.add()`` no ``DateTime``. Essa propriedade é responsável por _adicionar mais tempo a data definida no ``DateTime``_.
+    - Adicionando **36 horas** a hora atual do sistema:
+        ```
+        final later = dateNow.add(const Duration(hours: 36));
+        print(later);
+        ```
+
+- Fazendo operações com a propriedade  ``.subtract()`` no ``DateTime``. Essa propriedade é responsável por _remover/subtrair tempo da data definida no ``DateTime``_.
+    - Subtraindo **36 horas** da hora atual do sistema:
+        ```
+        final subtractHour = dateNow.subtract(const Duration(hours: 36));
+        print(subtractHour);
+        ```
+
+- As propriedades de comparação entre duas datas:
+    ```
+    final dateA = DateTime.now();
+    final dateB = dateA.add(const Duration(hours: 24));
+    ```
+
+    - ``.isAfter()`` - Compara se a primeira data é posterior a segunda data.
+        - ``print(dateA.isAfter(dateB));    // Retorna: false.``
+    
+    - ``.isBefore()`` - Compara se a primeira data é anterior a segunda data.
+        - ``print(dateA.isBefore(dateB));    // Retorna: true.``
+    
+    - ``.isAtSameMomentAs()`` - Compara se as datas são iguais.
+        - ``print(dateA.isAtSameMomentAs(dateB));    // Retorna: false.``
+
+- A Propriedade ``.difference()`` mostra a diferença entre duas datas:
+    ```
+    final dateC = DateTime.now();
+    final dateD = dateC.add(const Duration(hours: 24));
+
+    final difference = dateC.difference(dateD);
+    ```
+
+    - ``.inDays`` - Mostra a diferença em dias.
+        - ``print(difference.inDays);    // Retorna: -1``
+
+    - ``.inHours`` - Mostra a diferença em horas.
+        - ``print(difference.inHours);    // Retorna: -24``
+
+    - ``.inMinutes`` - Mostra a diferença em minutos.
+        - ``print(difference.inMinutes);    // Retorna: -1440``
+
+    - ``inSeconds`` - Mostra a diferença em segundos.
+        - ``print(difference.inSeconds);    // Retorna: -86400``
