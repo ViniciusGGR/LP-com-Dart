@@ -18,7 +18,8 @@
 - [Enum](#enum)
 - [String - Introdução](#string---introdução)
     - [String - Declaração:](#string---declaração)
-    - [String - Boas Práticas](#string---boas-práticas)
+    - [String - Boas Práticas:](#string---boas-práticas)
+    - [String - Operadores:](#string---operadores)
 
 ---
 
