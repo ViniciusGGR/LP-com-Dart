@@ -84,14 +84,15 @@ Variáveis que são declaradas com um valor inicial, devem ser declaradas com a 
     - Isso acontece, pois já se sabe que essa variável é do _tipo inteiro_, por isso o uso da palavra-chave ``int`` é desnecessária.
         - Por exemplo: ``int a = 1;``. Essa declaração é considerada uma má prática no Dart.
 
-Para declarar uma variável do tipo ``int``, que terá seu valor atribuido posteriormente, será necessário informar que a variável pode ser anulável, ou pode ser uma variável do **tipo late**.
+Declarando uma variável do tipo ``int``, que terá seu valor atribuido posteriormente.
 - Por exemplo:
     ```
     int a;
     a = 1;
     ```
-    - Esse código só poderá ser executado se a variável for anulável ``int? a;``, ou ser do tipo late ``late int a;``.
-    - O **tipo late** define que a variável será instanciada posteriormente.
+
+> Definindo que uma variável é anulável ``int? a;``.
+> O **tipo late** define que a variável será instanciada posteriormente ``late int a;``.
 
 ### Int - Funcionalidades:
 
@@ -594,4 +595,4 @@ Declarar uma variável do tipo ``String``, que terá seu valor atribuido posteri
     name = "Vinícius";
     ```
 
-
+### String - Operadores:
