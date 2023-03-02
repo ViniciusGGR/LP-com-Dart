@@ -16,6 +16,7 @@
 - [Duration](#duration)
 - [DateTime](#datetime)
 - [Enum](#enum)
+- [String - Introdução](#string---introdução)
 
 ---
 
@@ -530,3 +531,9 @@ switch (userType) {
 
 O ``enum`` facilita na criação do _switch case_, pois assim será criado um "padrão de nomenclatura" no time de desenvolvimento, pois assim o _switch case_ garantirá que quando o ``UserType`` é "chamado" só existirá aqueles tipos definidos.
 - Se criado um tipo novo dentro do ``enum``, o _switch case_ que estiver utilizando esse ``enum`` vai "reclamar" que esse novo tipo **não foi implementado**.
+
+---
+
+## String - Introdução
+
+
