@@ -17,6 +17,7 @@
 - [DateTime](#datetime)
 - [Enum](#enum)
 - [String - Introdução](#string---introdução)
+    - [String - Declaração:](#string---declaração)
 
 ---
 
@@ -535,5 +536,29 @@ O ``enum`` facilita na criação do _switch case_, pois assim será criado um "p
 ---
 
 ## String - Introdução
+
+``String`` é um tipo de dado muito utilizado em todas as linguagens de programação.
+
+[**Arquivo - _string.dart_**](./string.dart)
+
+``String`` é uma **texto/cadeia de caracteres**.
+
+> **Nota**: Toda ``String`` é declarada dentro de _aspas simples_ (''), ou _aspas duplas_ ("").
+
+Uma ``String`` pode ser um texto como nome, sexo, email, cpf, um número (desde que esteja dentro das aspas), idade, data de nascimento, peso, altura...
+
+Declarando uma ``String``:
+- **Nota**: Ao declarar uma ``String`` com a palavra-chave, repare que a palavra _começa com a letra maiúscula_.
+    ```
+    String myName;
+    myName = "Vinícius Gabriel";
+    ```
+- Declarando com a palavra-chave ``var``:
+    ```
+    var name = "Vinícius Gabriel";
+    print(name);
+    ```
+
+### String - Declaração:
 
 
