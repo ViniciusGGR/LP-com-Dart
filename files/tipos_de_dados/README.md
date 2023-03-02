@@ -15,6 +15,7 @@
     - [Double - Funcionalidades:](#double---funcionalidades)
 - [Duration](#duration)
 - [DateTime](#datetime)
+- [Enum](#enum)
 
 ---
 
@@ -458,3 +459,74 @@ Entendendo a classe ``DateTime()``:
 
     - ``inSeconds`` - Mostra a diferença em segundos.
         - ``print(difference.inSeconds);    // Retorna: -86400``
+
+---
+
+## Enum
+
+O ``enum`` é uma **propriedade** muito utilizada em várias linguagens de programação.
+
+É uma propriedade que é como uma "constante" no código.
+
+Exemplo de uso da propriedade ``enum``:
+- Definir tipos de usuários em um sistema. Por exemplo, definir usuários do tipo **admin**, **funcionário**, **cliente**... E com isso, é possível utilizar o ``enum`` para facilitar essa identificação desse tipo de usuário no código.
+- Definir tipos de vendas em um sistema. Por exemplo, um restaurante que possui _vendas por delivery_, que precisam de um motoqueiro para entregar, _vendas indoor_, que acontecem dentro do restaurante e que precisam de garçons para servir os clientes...
+
+O ``enum`` também é muito utilizado para facilitar a criação de comparações no código, utilizando um _Switch Case_, _if_...
+
+[**Arquivo - _enum.dart_**](./enum.dart)
+
+> **Nota**: Ao criar um ``enum``, o seu "nome" deve começar com uma letra maiúscula.
+
+Os tipos de um ``enum`` devem ficar entre **``{}``**
+
+> O ``enum`` é como se fosse uma classe, que não é possível colocar nenhum tipo de função. O ``enum`` serve apenas para definir os tipos.
+
+```
+// Declarando um 'Enum'.
+enum UserType {
+  admin,
+  customer,
+  employer,
+  driver,
+}
+
+void main() {
+  // Declarando uma variável 'userType'.
+
+  // Essa variável será instanciada com 'algum tipo'.
+  final userType = UserType.admin;
+  print(userType);    // Retorna: UserType.admin
+}
+```
+
+O ``enum`` não é possível "chamar" quando uma classe é instanciada, por exemplo: ``UserType().admin;``. Toda vez que o parênteses é inserido, quer dizer que você está "abrindo" uma classe.
+- O ``enum`` _não é uma classe_, o ``enum`` é um tipo **``enum``**.
+
+O ``enum`` também é muito utilizado para fazer comparações.  
+    
+```
+// Utilizando o 'enum' em uma comparação:
+switch (userType) {
+  case UserType.admin:
+    {
+      print("É uma pessoa administradora");
+    }
+    break;
+  case UserType.customer:
+    {
+      print("É um cliente");
+    }
+    break;
+  case UserType.employer:
+    {
+      print("É uma pessoa funcionária");
+    }
+    break;
+}
+```
+
+- Como o código anterior foi definido na variável ``userType`` que o tipo é **admin**, a comparação retornará a mensagem **``É uma pessoa administradora``**.
+
+O ``enum`` facilita na criação do _switch case_, pois assim será criado um "padrão de nomenclatura" no time de desenvolvimento, pois assim o _switch case_ garantirá que quando o ``UserType`` é "chamado" só existirá aqueles tipos definidos.
+- Se criado um tipo novo dentro do ``enum``, o _switch case_ que estiver utilizando esse ``enum`` vai "reclamar" que esse novo tipo **não foi implementado**.
