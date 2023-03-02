@@ -561,4 +561,20 @@ Declarando uma ``String``:
 
 ### String - Declaração:
 
+Formas de declaração de uma variável ``String`` em Dart.
+
+- Declaração com o _Tipo dinâmico_, com uso da palavra-chave **var**: ``var name;``
+    ```
+    var name;
+    name = "Vinícius Gabriel";
+    ```
+    - Declaração com o _Tipo dinâmico_, com o valor inicial já atribuido: ``var name = "Vinícius Gabriel";``
+    > O tipo ``var`` não define um tipo específico para a variável, podendo assim receber valores de qualquer tipo.
+
+- Declaração com o _Tipo explícito_ **String**: ``String myString;``
+    - Declaração com o _Tipo explícito_ **String**, com o valor inicial já atribuido: ``String myString = "Vinícius Gabriel";``
+    > O tipo ``String`` garante que a variável só receba **valores textuais/cadeias de caracteres**.
+
+É importante adotar um "padrão" ao declarar uma ``String``, deve-se seguir um padrão no uso de aspas, definindo o uso de _aspas simples_ ou _aspas duplas_ no seu código.
+
 
