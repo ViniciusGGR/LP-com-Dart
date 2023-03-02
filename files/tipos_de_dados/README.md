@@ -18,6 +18,7 @@
 - [Enum](#enum)
 - [String - Introdução](#string---introdução)
     - [String - Declaração:](#string---declaração)
+    - [String - Boas Práticas](#string---boas-práticas)
 
 ---
 
@@ -576,5 +577,21 @@ Formas de declaração de uma variável ``String`` em Dart.
     > O tipo ``String`` garante que a variável só receba **valores textuais/cadeias de caracteres**.
 
 É importante adotar um "padrão" ao declarar uma ``String``, deve-se seguir um padrão no uso de aspas, definindo o uso de _aspas simples_ ou _aspas duplas_ no seu código.
+
+### String - Boas Práticas:
+
+Boas práticas para se declarar **Strings**.
+
+Variáveis que são declaradas com um valor inicial, devem ser declaradas com a palavra-chave ``var``, o uso da palavra-chave ``String`` nesse caso é errado.
+- Por exemplo: ``var name = "Vinícius Gabriel";``
+    - Isso acontece, pois já se sabe que essa variável é do _tipo String_, por isso o uso da palavra-chave ``String`` é desnecessária.
+        - Por exemplo: ``String name = "Vinícius";``. Essa declaração é considerada uma má prática no Dart.
+
+Declarar uma variável do tipo ``String``, que terá seu valor atribuido posteriormente.
+- Por exemplo:
+    ```
+    String name;
+    name = "Vinícius";
+    ```
 
 
