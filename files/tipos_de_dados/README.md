@@ -22,6 +22,7 @@
     - [String - Operadores:](#string---operadores)
     - [String - Substring:](#string---substring)
     - [String - Split:](#string---split)
+    - [String - Length:](#string---length)
 
 ---
 
@@ -664,3 +665,25 @@ O ``split()`` pode ser usado para limpar uma ``String`` pois é só passar o "pa
 var split = fullName.split("Vinícius");
 print(split);    // Retorna: [,  Gabriel Gomes Rodrigues]
 ```
+
+### String - Length:
+
+O operador ``length`` que é utilizado para identificar a quantidade de caracteres que uma ``String`` possui.
+
+> **Nota**: Os espaços em branco contam como caracteres na programação.
+
+```
+var fullName = "Vinícius Gabriel Gomes Rodrigues";
+
+var length = fullName.length;
+print(length);    // Retorna: 32
+```
+
+- Utilizando o operador ``length`` para imprimir letra por letra da variável.
+    ```
+    for (var i = 0; i < length; i++) {
+      print(fullName[i]);
+    }
+    ```
+
+

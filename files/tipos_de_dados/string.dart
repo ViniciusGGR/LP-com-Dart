@@ -38,4 +38,13 @@ void main() {
 
   // Imprimindo índice específico dessa lista.
   print(split[0]);
+
+  // Utilizando o operador 'length'.
+  var length = fullName.length;
+  print(length);
+
+  // Imprimindo letra por letra da variável 'fullName'.
+  for (var i = 0; i < length; i++) {
+    print(fullName[i]);
+  }
 }
