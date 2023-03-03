@@ -20,6 +20,7 @@
     - [String - Declaração:](#string---declaração)
     - [String - Boas Práticas:](#string---boas-práticas)
     - [String - Operadores:](#string---operadores)
+    - [String - Substring](#string---substring)
 
 ---
 
@@ -618,3 +619,21 @@ print(sum);    // Retorna: Hello, World! Vinícius Rodrigues
 // Outra forma de concatenar duas Strings.
 print("$myString $string");    // Retorna: Hello, World! Vinícius Rodrigues
 ```
+
+### String - Substring:
+
+Dentro de uma ``String`` existe a funcionalidade **Substring**, que permite "dividir" essa ``String`` em uma menor.
+
+A ``substring()`` serve para pegar uma ``String`` (**String** é um _vetor de posições_) e a partir de certas posiçãos da ``String`` fazer um recorte nessa ``String``, pegando assim apenas partes dessa _cadeia de caracteres_.
+
+As posições em uma ``String`` sempre começam a ser contadas a partir da posição 0.
+
+> **Nota**: Ao contar as posições em uma ``String``, você deve acrescentar mais 1 ao final da posição desejada para pegar essa última letra. Por exemplo, caso deseje "imprimir" os caracteres entre 9 e 15, na funcionalidade **substring**, deve ser inserido os valores **9 e 16**.
+
+```
+var fullName = "Vinícius Gabriel Gomes Rodrigues";
+var substring = fullName.substring(9, 16);
+
+print(substring);    // Retorna: Gabriel
+```
+- Nesse exemplo, a letra **``G``** está na 9 posição e a letra **``l``** está na 15 posição, mas para a 15 posição ser impressa deve ser acrescentado +1 na funcionalidade ``substring()``, assim ficando _9 e 16_.

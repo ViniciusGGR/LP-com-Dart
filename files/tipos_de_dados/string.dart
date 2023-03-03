@@ -25,4 +25,10 @@ void main() {
 
   // Outra forma de concatenar duas Strings.
   print("$myString $string");
+
+  // Utilizando a funcionalidade 'Substring'.
+  var fullName = "Vinícius Gabriel Gomes Rodrigues";
+  var substring = fullName.substring(9, 16);    // Começa a contar a partir da 9 posição da String 'fullName' e imprime até a letra que está na 15 posição.
+
+  print(substring);    // Retorna: Gabriel.
 }
