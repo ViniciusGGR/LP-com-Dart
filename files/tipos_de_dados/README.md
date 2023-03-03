@@ -641,4 +641,26 @@ print(substring);    // Retorna: Gabriel
 
 ### String - Split:
 
+A funcionalidade **Split** em uma ``String`` serve para transformar essa ``String`` em uma **lista de caracteres**.
 
+- No ``split()`` deve ser definido o "pattern", que é o **padrão de corte**. Um caractere específico que define onde a ``String`` deve ser dividida.
+
+```
+var fullName = "Vinícius Gabriel Gomes Rodrigues";
+
+var split = fullName.split(" ");
+print(split);    // Retorna: [Vinícius, Gabriel, Gomes, Rodrigues]
+```
+- Esse código define que o "pattern" dessa ``String`` é os **espaços em branco**.
+
+- Também é possível imprimir índices específicos dessa lista criada com o ``split()``: ``print(split[0]);    // Retorna: Vinícius``
+    - Os índices de uma lista começam a partir do número 0.
+
+> **Resumindo**: O ``split()`` vai "quebrar" a ``String`` em um _array/lista_ baseado no "pattern" definido e essa lista pode ser manipulada da forma que você quiser.
+
+O ``split()`` pode ser usado para limpar uma ``String`` pois é só passar o "pattern" que deve ser _excluido_ da ``String``.
+
+```
+var split = fullName.split("Vinícius");
+print(split);    // Retorna: [,  Gabriel Gomes Rodrigues]
+```

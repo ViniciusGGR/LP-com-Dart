@@ -31,4 +31,11 @@ void main() {
   var substring = fullName.substring(9, 16);    // Começa a contar a partir da 9 posição da String 'fullName' e imprime até a letra que está na 15 posição.
 
   print(substring);    // Retorna: Gabriel.
+
+  // Utilizando a funcionalidade 'Split'.
+  var split = fullName.split(" ");
+  print(split);    // Retorna: [Vinícius, Gabriel, Gomes, Rodrigues]
+
+  // Imprimindo índice específico dessa lista.
+  print(split[0]);
 }
