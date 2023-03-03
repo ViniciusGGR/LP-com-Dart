@@ -1,6 +1,6 @@
 void main() {
   // Declaração com 'Tipo dinâmico'.
-  String myName;
+  var myName;    // Esse modo é uma MÁ PRÁTICA.
   myName = "Vinícius Gabriel";
 
   print(myName);
@@ -16,6 +16,13 @@ void main() {
   print(myString);
 
   // Declaração com 'Tipo explícito' com valor inicial já atribuido.
-  String string = "Vinícius Rodrigues";
+  String string = "Vinícius Rodrigues";    // Esse modo é uma MÁ PRÁTICA.
   print(string);
+
+  // Concatenando duas Strings:
+  var sum = myString + " " + string;
+  print(sum);
+
+  // Outra forma de concatenar duas Strings.
+  print("$myString $string");
 }

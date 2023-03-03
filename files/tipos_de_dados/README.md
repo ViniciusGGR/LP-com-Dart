@@ -597,3 +597,24 @@ Declarar uma variável do tipo ``String``, que terá seu valor atribuido posteri
     ```
 
 ### String - Operadores:
+
+Operações com **Strings**, no caso, _somar/concatenar_ duas **Strings**.
+
+A concatenação pega várias **Strings** separadas presentes no seu código e _agrupa/"soma"_ elas em uma única mensagem.
+
+```
+String myString;
+myString = "Hello, World!";
+  
+var string = "Vinícius Rodrigues";   
+```
+
+- Concatenando as duas **Strings** acima:
+
+```
+var sum = myString + " " + string;
+print(sum);    // Retorna: Hello, World! Vinícius Rodrigues
+
+// Outra forma de concatenar duas Strings.
+print("$myString $string");    // Retorna: Hello, World! Vinícius Rodrigues
+```
