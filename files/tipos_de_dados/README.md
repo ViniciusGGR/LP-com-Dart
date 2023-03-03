@@ -20,7 +20,8 @@
     - [String - Declaração:](#string---declaração)
     - [String - Boas Práticas:](#string---boas-práticas)
     - [String - Operadores:](#string---operadores)
-    - [String - Substring](#string---substring)
+    - [String - Substring:](#string---substring)
+    - [String - Split:](#string---split)
 
 ---
 
@@ -637,3 +638,7 @@ var substring = fullName.substring(9, 16);
 print(substring);    // Retorna: Gabriel
 ```
 - Nesse exemplo, a letra **``G``** está na 9 posição e a letra **``l``** está na 15 posição, mas para a 15 posição ser impressa deve ser acrescentado +1 na funcionalidade ``substring()``, assim ficando _9 e 16_.
+
+### String - Split:
+
+
