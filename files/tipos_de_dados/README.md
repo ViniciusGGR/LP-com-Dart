@@ -29,6 +29,7 @@
     - [String - Contains:](#string---contains)
     - [String - ReplaceAll:](#string---replaceall)
     - [String - ReplaceFirst:](#string---replacefirst)
+    - [String - ReplaceRange](#string---replacerange)
 
 ---
 
@@ -821,6 +822,17 @@ print(myText.replaceFirst("meu", "nosso"));
 
 - Esse código irá trocar a palavra **meu** por **nosso** apenas na primeira ocorrência da palavra **_meu_**. Portanto, o código acima retornará a seguinte mensagem: ``Esse é o nosso texto, mas não é meu algoritmo!``.
 
+### String - ReplaceRange:
 
+O método ``replaceRange`` fará uma substituição na ``String`` a partir de uma posição _inicial_ e uma posição _final_.
 
+```
+final myText = "Esse é meu texto, mas não é meu algoritmo!";
+print(myText.replaceRange(0, 10, "L"));
+```
 
+- Esse método irá substituir as letras do index 0 até 9 (a posição 10 não é incluída) pela letra "**L**". Portanto, a função ``print()`` retorna: ``L texto, mas não é meu algoritmo!``.
+
+Quando necessário fazer substituições em _posições específicas_ de uma ``String``, deve-se utilizar o método ``replaceRange``, pois assim você consegue definir a posição **inicial** e **final** da substituição.
+
+> **Nota**: Caso queira deixar a posição final em branco, deve-se colocar o ``null``, para assim substituir toda a String restante.

@@ -88,4 +88,7 @@ void main() {
 
   // Método ReplaceFirst:
   print(myText.replaceFirst("meu", "nosso"));
+
+  // Método ReplaceRange:
+  print(myText.replaceRange(0, 10, "L"));
 }
