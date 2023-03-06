@@ -33,6 +33,7 @@
     - [String - StartsWith:](#string---startswith)
     - [String - EndsWith:](#string---endswith)
     - [String - Trim:](#string---trim)
+- [List - Declaração](#list---declaração)
 
 ---
 
@@ -889,5 +890,75 @@ final stringTest = "      -Essa é minha String de teste!   -    ";
 print(stringTest.trimLeft());    // Retorna: "-Essa é minha String de teste!   -    "
 print(stringTest.trimRight());    // Retorna: "      -Essa é minha String de teste!   -"
 ```
+
+---
+
+## List - Declaração
+
+O ``List`` é um tipo/estrutura de dados muito importante no desenvolvimento de software. Uma ``List`` é utilizado para ordenar dados, uma quantidade de dados que são representados um após o outro.
+
+No Framework **Flutter** é muito comum o uso de ``List`` em vários lugares para colocar os _componentes_.
+
+[**Arquivo - _list.dart_**](./list.dart)
+
+- ``List items;`` - Declarando uma lista sem ser instanciada, do tipo dinâmica.
+    - Nesse exemplo, não é possível imprimir o valor dessa lista, pois não tem como imprimir uma lista sem um valor (sem ser inicializada), apenas se você definir que essa lista pode ser anulável.
+        ```
+        List? items;
+        print(items);    // Retorna: null
+        ```
+
+- ``List list = [];`` - Declarando uma lista já instanciada sem nenhum valor atribuido, do tipo dinâmica.
+    ```
+    List list = [];
+    print(list);    // Retorna: []
+    ```
+
+- ``var listc = [];`` - Declarando uma lista já instanciada sem nenhum valor atribuido, do tipo dinâmica com o uso da palavra-chave ``var``.
+    ```
+    var listc = [];
+    print(listc);
+    ```
+
+> **Dica**: Quando criar uma lista, já cria ela instanciada, mesmo que vazia. Assim erros no código são evitados.
+
+A representação de uma **lista** no Dart é utilizado o colchete **``[]``**, e dentro desse colchete que os itens da lista são inseridos.
+
+Em uma **lista** é possível colocar valores de diversos tipos, como ``int``, ``String``, ``double``, ``Map``... Mas você só pode inserir itens de tipos diferentes em uma **lista** se ela for do tipo dinâmica.
+
+É possível definir o tipo de dado que uma lista vai receber, com o uso de ``<dataType>`` na frente da palavra ``List``, ou na frente dos colchetes ``[]``.
+
+```
+List<String> list = ["Vinícius", "Gabriel", "Gomes", "Rodrigues"];
+print(list);
+
+print(list[2])    // Imprimindo o valor da posição 2 da lista: 'Gomes'.
+```
+
+```
+var listc = <int>[];
+print(listc);
+```
+
+- A lista ``list`` só aceita dados do tipo **``String``**.
+- O código acima retorna: ``[Vinícius, Gabriel, Gomes, Rodrigues]``.
+
+Uma **lista** sempre começa a contar suas posições/índice a partir do ``0``.
+
+> **Resumo**: Uma lista é um conjunto de dados, normalmente _ordenados_.
+
+Declarando uma lista e instanciando ela posteriormente:
+
+```
+List<String> listb;
+listb = ["Vinícius", "William", "Sandra"];
+
+print(listb);
+```
+
+Boas práticas na declaração de uma ``List``:
+
+- Se utilizado uma variável, a boa prática é a declaração: ``var listName = <dataType>[];``
+- Se a lista for instanciada dentro de uma classe e será preenchida dentro do construtor, a boa prática é a declaração: ``List<dataType> listName = [];``
 
 
