@@ -85,4 +85,7 @@ void main() {
 
   final myText = "Esse é meu texto, mas não é meu algoritmo!";
   print(myText.replaceAll("meu", "nosso"));
+
+  // Método ReplaceFirst:
+  print(myText.replaceFirst("meu", "nosso"));
 }

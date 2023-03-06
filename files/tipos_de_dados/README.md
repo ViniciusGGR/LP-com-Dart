@@ -28,6 +28,7 @@
     - [String - IsNotEmpty:](#string---isnotempty)
     - [String - Contains:](#string---contains)
     - [String - ReplaceAll:](#string---replaceall)
+    - [String - ReplaceFirst:](#string---replacefirst)
 
 ---
 
@@ -806,6 +807,19 @@ print(myText.replaceAll("meu", "nosso"));
 - O código acima retorna a seguinte mensagem: ``Esse é nosso texto, mas não é nosso algoritmo!``.
 
 O método ``replaceAll`` vai alterar todos os lugares em que o pattern (padrão) definido, está presente na ``String``.
+
+### String - ReplaceFirst:
+
+O método ``replaceFirst`` é responsável por trocar na _primeira ocorrência_ do pattern (padrão) definido por você.
+
+Usando como exemplo o seguinte código:
+
+```
+final myText = "Esse é meu texto, mas não é meu algoritmo!";
+print(myText.replaceFirst("meu", "nosso"));
+```
+
+- Esse código irá trocar a palavra **meu** por **nosso** apenas na primeira ocorrência da palavra **_meu_**. Portanto, o código acima retornará a seguinte mensagem: ``Esse é o nosso texto, mas não é meu algoritmo!``.
 
 
 
