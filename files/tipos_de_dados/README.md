@@ -37,6 +37,7 @@
     - [List - Add:](#list---add)
     - [List - AddAll:](#list---addall)
     - [List - Remove:](#list---remove)
+    - [List - RemoveAt:](#list---removeat)
 
 ---
 
@@ -1036,3 +1037,17 @@ print(listNumbers);    // Retorna: [5, 20, 25, 22, 10, 15, 12]
 ```
 
 - Nesse exemplo, o número/objeto **``10``** aparece duas vezes, mas após utilizar o método ``remove`` apenas a primeira ocorrência do número/objeto ``10`` é retirada da lista, mantendo assim a segunda ocorrência desse número/objeto.
+
+### List - RemoveAt:
+
+O método ``removeAt`` serve para remover um item da lista a partir do seu index (posição na lista).
+
+```
+print(listB);    // Retorna: [Vinícius, Sandra, William, Wagner]
+
+listB.removeAt(0);
+
+print(listB);    // Retorna: [Sandra, William, Wagner]
+```
+
+- Removendo o item de index 0 da lista ``listB``, no caso o valor **Vinícius**.

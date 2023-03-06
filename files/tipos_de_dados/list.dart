@@ -63,4 +63,11 @@ void main() {
   listNumbers.remove(10);
 
   print(listNumbers);    // Retorna: [5, 20, 25, 22, 10, 15, 12]
+
+  // Método removeAt:
+  print(listB);    // Retorna: [Vinícius, Sandra, William, Wagner]
+
+  listB.removeAt(0);
+
+  print(listB);    // Retorna: [Sandra, William, Wagner]
 }
