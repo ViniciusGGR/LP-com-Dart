@@ -32,4 +32,21 @@ void main() {
   numbers.add(5);
 
   print(numbers);
+
+  // Método addAll:
+  var listA = <String>["Vinícius", "Sandra", "William"];
+  print(listA);    // Retorna: [Vinícius, Sandra, William]
+
+  // Concatenando valores de uma nova lista a 'listA'.
+  listA.addAll(["Carol", "Elena"]);
+  print(listA);    // Retorna: [Vinícius, Sandra, William, Carol, Elena]
+
+  // Outra forma de utilizar o método 'addAll':
+  var listB = ["Vinícius", "Sandra"];
+  var listC = ["William", "Wagner"];
+
+  print(listB);    // Retorna: [Vinícius, Sandra]
+
+  listB.addAll(listC);
+  print(listB);    // Retorna: [Vinícius, Sandra, William, Wagner]
 }

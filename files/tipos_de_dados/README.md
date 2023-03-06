@@ -35,6 +35,7 @@
     - [String - Trim:](#string---trim)
 - [List - Declaração](#list---declaração)
     - [List - Add:](#list---add)
+    - [List - AddAll:](#list---addall)
 
 ---
 
@@ -980,4 +981,29 @@ Para o método ``add`` funcionar, a lista tem que ser inicializada/instanciada a
 
 No código acima, como a lista está **tipada** para receber apenas valores inteiros, o método ``add`` só funcionará com números inteiros, caso tente adicionar uma ``String`` será retornado um erro.
 
+### List - AddAll:
 
+O método ``addAll`` serve para adicionar uma **lista inteira** dentro de outra lista, ou seja, _concatenar duas listas_.
+
+```
+var listA = <String>["Vinícius", "Sandra", "William"];
+print(listA);    // Retorna: [Vinícius, Sandra, William]
+
+// Concatenando valores de uma nova lista a 'listA'.
+listA.addAll(["Carol", "Elena"]);
+print(listA);    // Retorna: [Vinícius, Sandra, William, Carol, Elena]
+```
+
+- Outra forma de utilizar o método ``addAll``:
+
+```
+var listB = ["Vinícius", "Sandra"];
+var listC = ["William", "Wagner"];
+
+print(listB);    // Retorna: [Vinícius, Sandra]
+
+listB.addAll(listC);
+print(listB);    // Retorna: [Vinícius, Sandra, William, Wagner]
+```
+
+- Ao utilizar o método ``addAll``, a nova lista será concatenada com a primeira, e os valores da nova lista serão adicionados ao final da primeira lista.
