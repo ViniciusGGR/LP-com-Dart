@@ -61,4 +61,8 @@ void main() {
   // Verificando se uma 'String' anulável está vazia.
   String? text2;
   print(text2?.isEmpty);
+
+  // Método IsNotEmpty:
+  final text3 = "Vinícius";
+  print(text3.isNotEmpty);    // Retorna: true
 }

@@ -25,6 +25,7 @@
     - [String - Length:](#string---length)
     - [String - Interpolation:](#string---interpolation)
     - [String - IsEmpty:](#string---isempty)
+    - [String - IsNotEmpty:](#string---isnotempty)
 
 ---
 
@@ -723,7 +724,7 @@ print(text.isEmpty);    // Retorna: false
 
 - Como agora a ``String`` possui um valor/conteúdo, o valor de retorno do método ``IsEmpty`` será ``false``.
 
-O método ``IsEmpty`` é mais indicado, do que o uso do ``print(text.length == 0);``. Portanto, o método ``IsEmpty`` deve **sempre** ser utilizado para verificar se uma ``String`` está ou não vazia.
+O método ``IsEmpty`` é mais indicado, do que o uso do ``print(text.length == 0);``. Portanto, o método ``IsEmpty`` deve **sempre** ser utilizado para verificar se uma ``String`` está vazia.
 
 > **Nota**: Se criado uma ``String?`` anulável, o ``IsEmpty`` pode ser nulo, portanto, ao chamar uma variável anulável com o método ``IsEmpty``, a variável deve estar com o símbolo **``?``** na frente do nome da variável.
 
@@ -731,5 +732,25 @@ O método ``IsEmpty`` é mais indicado, do que o uso do ``print(text.length == 0
 String? text2;
 print(text2?.isEmpty);
 ```
+
+### String - IsNotEmpty:
+
+O método ``IsNotEmpty`` verifica se uma ``String`` não está vazia e retorna um valor **booleano**.
+
+```
+final text3 = "Vinícius";
+print(text3.isNotEmpty);    // Retorna: true
+```
+
+- Como o valor retornado foi ``true``, significa que a ``String`` não está vazia.
+
+```
+final text3 = "";
+print(text3.isNotEmpty);    // Retorna: false
+```
+
+- Como  a ``String`` não possui um valor/conteúdo, o valor de retorno do método ``IsNotEmpty`` será ``false``.
+
+O método ``IsNotEmpty`` é mais indicado, do que o uso do ``print(text.length > 0);``. Portanto, o método ``IsNotEmpty`` deve **sempre** ser utilizado para verificar se uma ``String`` não está vazia.
 
 
