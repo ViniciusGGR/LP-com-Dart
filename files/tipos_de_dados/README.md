@@ -27,6 +27,7 @@
     - [String - IsEmpty:](#string---isempty)
     - [String - IsNotEmpty:](#string---isnotempty)
     - [String - Contains:](#string---contains)
+    - [String - ReplaceAll:](#string---replaceall)
 
 ---
 
@@ -769,3 +770,43 @@ print(example.contains("lógica de programação"));    // Retorna: true
 - Esse trecho de código retorna ``true``, pois **_lógica de programação_** está presente na variável ``example``.
 
 > **Nota**: O método ``contains()`` verifica a igualdade até nas letras _maiúsculas_ e _minúsculas_.
+
+### String - ReplaceAll:
+
+O método ``replaceAll``, a partir de um padrão substitui partes da ``String`` por um valor que você definir.
+
+O método ``replaceAll`` é muito utilizado com números, por exemplo: representação de valores monetários.
+
+```
+final value = "R\$ 10,00";
+print(value);
+```
+
+- Utilizando o ``replaceAll`` para converter **``R$ 10,00``** em **``10,00``**.
+
+```
+print(value.replaceAll("R\$ ", ""));
+```
+> Substituindo o símbolo **``R$``** por nada.
+
+- Utilizando o ``replaceAll`` para converter **``10,00``** em **``10.00``**.
+
+```
+print(value.replaceAll("R\$ ", "").replaceAll(",", "."));
+```
+> Substituindo a vírgula **``,``**, por um ponto **``.``**.
+
+Utilizando o método ``replaceAll`` para alterar partes do texto:
+
+```
+final myText = "Esse é meu texto, mas não é meu algoritmo!";
+print(myText.replaceAll("meu", "nosso"));
+```
+
+- O código acima retorna a seguinte mensagem: ``Esse é nosso texto, mas não é nosso algoritmo!``.
+
+O método ``replaceAll`` vai alterar todos os lugares em que o pattern (padrão) definido, está presente na ``String``.
+
+
+
+

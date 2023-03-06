@@ -69,4 +69,20 @@ void main() {
   // Método Contains:
   final example = "O Alencar está criando o roteiro do curso de lógica de programação em Dart.";
   print(example.contains("lógica de programação"));    // Retorna: true
+
+  // Método ReplaceAll:
+  final value = "R\$ 10,00";
+  print(value);
+
+  // Formatando uma String com o método 'replaceAll'.
+  final parse = value.replaceAll("R\$ ", "").replaceAll(",", ".");
+  
+  // Convertendo a String formatada em um double.
+  final number = double.parse(parse);
+
+  // Imprimindo o valor da variável number (double) + 1.
+  print(number + 1);
+
+  final myText = "Esse é meu texto, mas não é meu algoritmo!";
+  print(myText.replaceAll("meu", "nosso"));
 }
