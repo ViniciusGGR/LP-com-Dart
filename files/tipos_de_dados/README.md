@@ -24,6 +24,7 @@
     - [String - Split:](#string---split)
     - [String - Length:](#string---length)
     - [String - Interpolation:](#string---interpolation)
+    - [String - IsEmpty:](#string---isempty)
 
 ---
 
@@ -703,5 +704,32 @@ print("Olá $user, seja bem-vindo!");
 A interpolação é feita com o símbolo ``$``, seguido do nome da variável. A interpolação nesse caso é utilizado para imprimir o valor instanciado da variável ``user`` na mensagem da função ``print()`` sem o uso do operador de soma ``+``.
 
 > **Nota**: Também é possível colocar o nome da variável entre **chaves**, da seguinte forma: ``print("Olá ${user}, seja bem-vindo!");``. Esse modelo é utilizado para _acessar um objeto/atributo dentro da String, assim você pode "manipular" essa String diretamente na função print()_.
+
+### String - IsEmpty:
+
+O método/função ``IsEmpty`` verifica se uma ``String`` está vazia e retorna um valor **booleano**.
+
+```
+final text = "";
+print(text.isEmpty);    // Retorna: true
+```
+
+- Como o valor retornado foi ``true``, significa que a ``String`` está vazia.
+
+```
+final text = "Vinícius";
+print(text.isEmpty);    // Retorna: false
+```
+
+- Como agora a ``String`` possui um valor/conteúdo, o valor de retorno do método ``IsEmpty`` será ``false``.
+
+O método ``IsEmpty`` é mais indicado, do que o uso do ``print(text.length == 0);``. Portanto, o método ``IsEmpty`` deve **sempre** ser utilizado para verificar se uma ``String`` está ou não vazia.
+
+> **Nota**: Se criado uma ``String?`` anulável, o ``IsEmpty`` pode ser nulo, portanto, ao chamar uma variável anulável com o método ``IsEmpty``, a variável deve estar com o símbolo **``?``** na frente do nome da variável.
+
+```
+String? text2;
+print(text2?.isEmpty);
+```
 
 

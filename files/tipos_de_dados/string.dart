@@ -53,4 +53,12 @@ void main() {
 
   // Inserindo/Interpolando uma variável dentro de uma String.
   print("Olá $user, seja bem-vindo!");
+
+  // Método IsEmpty:
+  final text = "";
+  print(text.isEmpty);    // Retorna: true
+
+  // Verificando se uma 'String' anulável está vazia.
+  String? text2;
+  print(text2?.isEmpty);
 }
