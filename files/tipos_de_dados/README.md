@@ -32,6 +32,7 @@
     - [String - ReplaceRange](#string---replacerange)
     - [String - StartsWith:](#string---startswith)
     - [String - EndsWith:](#string---endswith)
+    - [String - Trim:](#string---trim)
 
 ---
 
@@ -868,4 +869,25 @@ print(helloWorld.endsWith("World!"));    // Retorna: true
 - O código acima está verificando se a **String** termina com "**!**"/"**World!**" e retorna um valor **booleano**, no caso ``true``.
 
 > **Nota**: O método ``endsWith`` diferencia _maiúsculas_ de _minúsculas_.
+
+### String - Trim:
+
+A função ``trim`` que serve para remover os espaços em branco do início e do final da ``String``.
+
+```
+final stringTest = "      -Essa é minha String de teste!   -    ";
+print(stringTest.trim());
+```
+
+- Esse código está removendo todos os espaços em branco do início e do final da ``String``. Portanto, a função ``print()`` retorna: **``-Essa é minha String de teste!   -``**.
+
+Com a função ``trim`` tem a possibilidade de fazer um ``trimLeft()`` que vai remover os espaços a esquerda, e fazer um ``trimRight()`` que vai remover os espaços a direita.
+
+```
+final stringTest = "      -Essa é minha String de teste!   -    ";
+
+print(stringTest.trimLeft());    // Retorna: "-Essa é minha String de teste!   -    "
+print(stringTest.trimRight());    // Retorna: "      -Essa é minha String de teste!   -"
+```
+
 

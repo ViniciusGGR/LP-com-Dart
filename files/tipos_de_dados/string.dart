@@ -102,4 +102,11 @@ void main() {
   print(helloWorld.endsWith("!"));    // Retorna: true
 
   print(helloWorld.endsWith("World!"));    // Retorna: true
+
+  // Método Trim:
+  final stringTest = "      -Essa é minha String de teste!   -    ";
+  print(stringTest.trim());
+
+  print(stringTest.trimLeft());
+  print(stringTest.trimRight());
 }
