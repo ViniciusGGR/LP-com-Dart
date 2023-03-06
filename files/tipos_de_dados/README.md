@@ -31,6 +31,7 @@
     - [String - ReplaceFirst:](#string---replacefirst)
     - [String - ReplaceRange](#string---replacerange)
     - [String - StartsWith:](#string---startswith)
+    - [String - EndsWith:](#string---endswith)
 
 ---
 
@@ -840,15 +841,31 @@ Quando necessário fazer substituições em _posições específicas_ de uma ``S
 
 ### String - StartsWith:
 
-O método/função ``startsWith`` serve para verificar se uma ``String``, por exemplo começa com a letra "**H**", retornando assim um valor **booleano**.
+O método/função ``startsWith`` serve para verificar se uma ``String``, por exemplo começa com a letra "**H**" ou com a palavra "**Hello**", retornando assim um valor **booleano**.
 
 ```
 final helloWorld = "Hello, World!";
 print(helloWorld.startsWith("H"));    // Retorna: true
+
+print(helloWorld.startsWith("Hello"));    // Retorna: true
 ```
 
-- O código acima está verificando se a **String** começa com "**H**" e retornando um valor **booleano**, no caso ``true``.
+- O código acima está verificando se a **String** começa com "**H**"/"**Hello**" e retorna um valor **booleano**, no caso ``true``.
 
 > **Nota**: O método ``startsWith`` diferencia _maiúsculas_ de _minúsculas_.
 
+### String - EndsWith:
+
+O método ``endsWith`` serve para verificar se uma ``String``, por exemplo termina com o caractere "**!**" ou com a palavra "**World!**", retornando assim um valor **booleano**.
+
+```
+final helloWorld = "Hello, World!";
+print(helloWorld.endsWith("!"));    // Retorna: true
+
+print(helloWorld.endsWith("World!"));    // Retorna: true
+```
+
+- O código acima está verificando se a **String** termina com "**!**"/"**World!**" e retorna um valor **booleano**, no caso ``true``.
+
+> **Nota**: O método ``endsWith`` diferencia _maiúsculas_ de _minúsculas_.
 

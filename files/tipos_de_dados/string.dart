@@ -95,4 +95,11 @@ void main() {
   // Método StartsWith:
   final helloWorld = "Hello, World!";
   print(helloWorld.startsWith("H"));
+
+  print(helloWorld.startsWith("Hello"));
+
+  // Método EndsWith:
+  print(helloWorld.endsWith("!"));    // Retorna: true
+
+  print(helloWorld.endsWith("World!"));    // Retorna: true
 }
