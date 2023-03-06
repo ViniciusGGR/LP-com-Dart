@@ -23,6 +23,7 @@
     - [String - Substring:](#string---substring)
     - [String - Split:](#string---split)
     - [String - Length:](#string---length)
+    - [String - Interpolation:](#string---interpolation)
 
 ---
 
@@ -668,7 +669,7 @@ print(split);    // Retorna: [,  Gabriel Gomes Rodrigues]
 
 ### String - Length:
 
-O operador ``length`` que é utilizado para identificar a quantidade de caracteres que uma ``String`` possui.
+O operador ``length`` é utilizado para identificar a quantidade de caracteres que uma ``String`` possui.
 
 > **Nota**: Os espaços em branco contam como caracteres na programação.
 
@@ -685,5 +686,22 @@ print(length);    // Retorna: 32
       print(fullName[i]);
     }
     ```
+
+### String - Interpolation:
+
+A _interpolação_ de **Strings** é muito utilizada no desenvolvimento de Software.
+
+**Interpolação** serve para inserir uma variável dentro de uma ``String`` sem a utilização de um operador de **``+``** (soma).
+
+```
+var user = "ViniciusGGR";
+
+// Inserindo/Interpolando uma variável dentro de uma String.
+print("Olá $user, seja bem-vindo!");
+```
+
+A interpolação é feita com o símbolo ``$``, seguido do nome da variável. A interpolação nesse caso é utilizado para imprimir o valor instanciado da variável ``user`` na mensagem da função ``print()`` sem o uso do operador de soma ``+``.
+
+> **Nota**: Também é possível colocar o nome da variável entre **chaves**, da seguinte forma: ``print("Olá ${user}, seja bem-vindo!");``. Esse modelo é utilizado para _acessar um objeto/atributo dentro da String, assim você pode "manipular" essa String diretamente na função print()_.
 
 

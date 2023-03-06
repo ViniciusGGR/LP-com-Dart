@@ -47,4 +47,10 @@ void main() {
   for (var i = 0; i < length; i++) {
     print(fullName[i]);
   }
+
+  // Interpolação:
+  var user = "ViniciusGGR";
+
+  // Inserindo/Interpolando uma variável dentro de uma String.
+  print("Olá $user, seja bem-vindo!");
 }
