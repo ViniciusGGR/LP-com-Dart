@@ -39,6 +39,7 @@
     - [List - Remove:](#list---remove)
     - [List - RemoveAt:](#list---removeat)
     - [List - Clear:](#list---clear)
+    - [List - Contains:](#list---contains)
 
 ---
 
@@ -1068,3 +1069,16 @@ print(users);    // Retorna: []
 - A função ``clear`` limpou a lista **users**, deixando assim essa lista _vazia_.
 
 A função ``clear`` é muito útil com variáveis do tipo **``final``**, pois variáveis desse tipo não aceitam ser instanciadas com um novo valor vazio, mesmo assim, a função ``clear`` funciona perfeitamente com esse tipo de variável.
+
+### List - Contains:
+
+A função ``contains`` serve para verificar se um **_dado específico_** já está presente na lista, para assim evitar repetições. Essa função retornará um valor **booleano**, se o objeto já estiver contido na lista retornará ``true``, se não retornará ``false``.
+
+```
+var people = <String>["Vinícius", "Carol", "Elena"];
+var toCheck = people.contains("Elena");
+
+print(toCheck);    // Retorna: true
+```
+
+- O código acima está verificando se o objeto **``Elena``** está presente na lista ``people``, no caso está sim presente, portanto a verificação retorna **``true``**.

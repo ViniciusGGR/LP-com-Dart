@@ -77,4 +77,10 @@ void main() {
 
   users.clear();
   print(users);    // Retorna: []
+
+  // Função contains:
+  var people = <String>["Vinícius", "Carol", "Elena"];
+  var toCheck = people.contains("Elena");
+
+  print(toCheck);    // Retorna: true
 }
