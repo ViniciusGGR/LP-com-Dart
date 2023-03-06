@@ -91,4 +91,8 @@ void main() {
 
   // Método ReplaceRange:
   print(myText.replaceRange(0, 10, "L"));
+
+  // Método StartsWith:
+  final helloWorld = "Hello, World!";
+  print(helloWorld.startsWith("H"));
 }

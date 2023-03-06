@@ -30,6 +30,7 @@
     - [String - ReplaceAll:](#string---replaceall)
     - [String - ReplaceFirst:](#string---replacefirst)
     - [String - ReplaceRange](#string---replacerange)
+    - [String - StartsWith:](#string---startswith)
 
 ---
 
@@ -836,3 +837,18 @@ print(myText.replaceRange(0, 10, "L"));
 Quando necessário fazer substituições em _posições específicas_ de uma ``String``, deve-se utilizar o método ``replaceRange``, pois assim você consegue definir a posição **inicial** e **final** da substituição.
 
 > **Nota**: Caso queira deixar a posição final em branco, deve-se colocar o ``null``, para assim substituir toda a String restante.
+
+### String - StartsWith:
+
+O método/função ``startsWith`` serve para verificar se uma ``String``, por exemplo começa com a letra "**H**", retornando assim um valor **booleano**.
+
+```
+final helloWorld = "Hello, World!";
+print(helloWorld.startsWith("H"));    // Retorna: true
+```
+
+- O código acima está verificando se a **String** começa com "**H**" e retornando um valor **booleano**, no caso ``true``.
+
+> **Nota**: O método ``startsWith`` diferencia _maiúsculas_ de _minúsculas_.
+
+
