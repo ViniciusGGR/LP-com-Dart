@@ -70,4 +70,11 @@ void main() {
   listB.removeAt(0);
 
   print(listB);    // Retorna: [Sandra, William, Wagner]
+
+  // Função clear:
+  final users = <String>["Vinícius", "William", "Sandra"];
+  print(users);    // Retorna: [Vinícius, William, Sandra]
+
+  users.clear();
+  print(users);    // Retorna: []
 }

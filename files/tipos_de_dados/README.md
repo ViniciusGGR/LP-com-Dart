@@ -38,6 +38,7 @@
     - [List - AddAll:](#list---addall)
     - [List - Remove:](#list---remove)
     - [List - RemoveAt:](#list---removeat)
+    - [List - Clear:](#list---clear)
 
 ---
 
@@ -1051,3 +1052,19 @@ print(listB);    // Retorna: [Sandra, William, Wagner]
 ```
 
 - Removendo o item de index 0 da lista ``listB``, no caso o valor **Vinícius**.
+
+### List - Clear:
+
+A função ``clear`` serve para limpar uma lista.
+
+```
+final users = <String>["Vinícius", "William", "Sandra"];
+print(users);    // Retorna: [Vinícius, William, Sandra]
+
+users.clear();
+print(users);    // Retorna: []
+```
+
+- A função ``clear`` limpou a lista **users**, deixando assim essa lista _vazia_.
+
+A função ``clear`` é muito útil com variáveis do tipo **``final``**, pois variáveis desse tipo não aceitam ser instanciadas com um novo valor vazio, mesmo assim, a função ``clear`` funciona perfeitamente com esse tipo de variável.
