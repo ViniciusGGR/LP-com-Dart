@@ -36,6 +36,7 @@
 - [List - Declaração](#list---declaração)
     - [List - Add:](#list---add)
     - [List - AddAll:](#list---addall)
+    - [List - Remove:](#list---remove)
 
 ---
 
@@ -1007,3 +1008,31 @@ print(listB);    // Retorna: [Vinícius, Sandra, William, Wagner]
 ```
 
 - Ao utilizar o método ``addAll``, a nova lista será concatenada com a primeira, e os valores da nova lista serão adicionados ao final da primeira lista.
+
+### List - Remove:
+
+O método ``remove`` serve para remover itens de uma lista. Esse método recebe um objeto da lista que deve ser removido.
+
+```
+print(listA);    // Retorna: [Vinícius, Sandra, William, Carol, Elena]
+listA.remove("William");
+
+print(listA);    // Retorna: [Vinícius, Sandra, Carol, Elena]
+```
+
+- O método ``remove`` "exclui" um item por vez da lista.
+
+> O método ``remove`` diferencia maiúsculas de minúsculas.
+
+Ao utilizar o método ``remove`` com números, ele retira apenas a primeira ocorrência do objeto que você passou. Por exemplo:
+
+```
+var listNumbers = <int>[10, 5, 20, 25, 22, 10, 15, 12];
+print(listNumbers);    // Retorna: [10, 5, 20, 25, 22, 10, 15, 12]
+
+listNumbers.remove(10);
+
+print(listNumbers);    // Retorna: [5, 20, 25, 22, 10, 15, 12]
+```
+
+- Nesse exemplo, o número/objeto **``10``** aparece duas vezes, mas após utilizar o método ``remove`` apenas a primeira ocorrência do número/objeto ``10`` é retirada da lista, mantendo assim a segunda ocorrência desse número/objeto.

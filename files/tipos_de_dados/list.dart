@@ -42,11 +42,25 @@ void main() {
   print(listA);    // Retorna: [Vinícius, Sandra, William, Carol, Elena]
 
   // Outra forma de utilizar o método 'addAll':
-  var listB = ["Vinícius", "Sandra"];
-  var listC = ["William", "Wagner"];
+  var listB = <String>["Vinícius", "Sandra"];
+  var listC = <String>["William", "Wagner"];
 
   print(listB);    // Retorna: [Vinícius, Sandra]
 
   listB.addAll(listC);
   print(listB);    // Retorna: [Vinícius, Sandra, William, Wagner]
+
+  // Método remove:
+  print(listA);    // Retorna: [Vinícius, Sandra, William, Carol, Elena]
+  listA.remove("William");
+
+  print(listA);    // Retorna: [Vinícius, Sandra, Carol, Elena]
+
+  // Utilizando o método remove com números:
+  var listNumbers = <int>[10, 5, 20, 25, 22, 10, 15, 12];
+  print(listNumbers);    // Retorna: [10, 5, 20, 25, 22, 10, 15, 12]
+
+  listNumbers.remove(10);
+
+  print(listNumbers);    // Retorna: [5, 20, 25, 22, 10, 15, 12]
 }
