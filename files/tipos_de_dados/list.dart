@@ -20,4 +20,16 @@ void main() {
   // Declarando uma lista que receberá apenas valores inteiros.
   var listc = <int>[];
   print(listc);
+
+  // Método add:
+
+  // Criando uma lista que receberá apenas valores inteiros.
+  final numbers = <int>[];
+  
+  print(numbers);
+
+  // Adicionando o valor '05' a lista 'numbers'.
+  numbers.add(5);
+
+  print(numbers);
 }

@@ -34,6 +34,7 @@
     - [String - EndsWith:](#string---endswith)
     - [String - Trim:](#string---trim)
 - [List - Declaração](#list---declaração)
+    - [List - Add:](#list---add)
 
 ---
 
@@ -960,5 +961,23 @@ Boas práticas na declaração de uma ``List``:
 
 - Se utilizado uma variável, a boa prática é a declaração: ``var listName = <dataType>[];``
 - Se a lista for instanciada dentro de uma classe e será preenchida dentro do construtor, a boa prática é a declaração: ``List<dataType> listName = [];``
+
+### List - Add:
+
+O método ``add`` serve para adicionar itens a uma lista.
+
+```
+final numbers = <int>[];
+  
+print(numbers);    // Retorna: []
+
+numbers.add(5);
+
+print(numbers);    // Retorna: [5]
+```
+
+Para o método ``add`` funcionar, a lista tem que ser inicializada/instanciada anteriormente, mesmo estando completamente vazia.
+
+No código acima, como a lista está **tipada** para receber apenas valores inteiros, o método ``add`` só funcionará com números inteiros, caso tente adicionar uma ``String`` será retornado um erro.
 
 
