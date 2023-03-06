@@ -26,6 +26,7 @@
     - [String - Interpolation:](#string---interpolation)
     - [String - IsEmpty:](#string---isempty)
     - [String - IsNotEmpty:](#string---isnotempty)
+    - [String - Contains:](#string---contains)
 
 ---
 
@@ -753,4 +754,18 @@ print(text3.isNotEmpty);    // Retorna: false
 
 O método ``IsNotEmpty`` é mais indicado, do que o uso do ``print(text.length > 0);``. Portanto, o método ``IsNotEmpty`` deve **sempre** ser utilizado para verificar se uma ``String`` não está vazia.
 
+### String - Contains:
 
+O método/função de ``contains`` serve para validar se um trecho de código, ou seja, se uma palavra está inserida dentro de um contexto grande, por exemplo: se em uma frase, uma determinada palavra está presente nessa frase.
+
+O método ``contains()`` faz a validação se o trecho de código/palavras estão presentes na ``String`` e retorna um valor **booleano**.
+
+```
+final example = "O Alencar está criando o roteiro do curso de lógica de programação em Dart.";
+
+print(example.contains("lógica de programação"));    // Retorna: true
+```
+
+- Esse trecho de código retorna ``true``, pois **_lógica de programação_** está presente na variável ``example``.
+
+> **Nota**: O método ``contains()`` verifica a igualdade até nas letras _maiúsculas_ e _minúsculas_.

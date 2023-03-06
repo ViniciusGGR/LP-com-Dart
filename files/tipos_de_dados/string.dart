@@ -65,4 +65,8 @@ void main() {
   // Método IsNotEmpty:
   final text3 = "Vinícius";
   print(text3.isNotEmpty);    // Retorna: true
+
+  // Método Contains:
+  final example = "O Alencar está criando o roteiro do curso de lógica de programação em Dart.";
+  print(example.contains("lógica de programação"));    // Retorna: true
 }
