@@ -107,4 +107,20 @@ void main() {
 
   firstItem = testUsers.firstWhere((e) => e.contains("Elena"), orElse: () => "VAZIO");
   print(firstItem);
+
+  // Função forEach:
+  print(testUsers);
+
+  // forEach
+  testUsers.forEach((e) {
+    print("Usuário: $e");
+  });
+
+  var semesterSalary = <int>[1000, 5000, 4000, 6000, 7000, 10000];
+  var total = 0;
+
+  semesterSalary.forEach((element) {
+    total += element;
+  });
+  print("Sua média salarial nos últimos 6 meses foi de: R\$${total / 6}");
 }

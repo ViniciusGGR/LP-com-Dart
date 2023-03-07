@@ -42,6 +42,7 @@
     - [List - Contains:](#list---contains)
     - [List - ElementAt:](#list---elementat)
     - [List - First Where:](#list---first-where)
+    - [List - ForEach:](#list---foreach)
 
 ---
 
@@ -1150,6 +1151,49 @@ print(firstItem);    // Retorna: VAZIO
 
 - Como a condição definida não foi identificado o pattern (padrão), o ``orElse`` retorna o valor definido, no caso **``VAZIO``** assim evitando um erro ao executar o código.
 
+### List - ForEach:
 
+A função ``forEach`` é muito utilizada quando se está trabalhando com uma **lista**. Essa função serve para percorrer uma **lista** de dados, ou seja, pegar um dado, acessar esse dado, pegar o resultado e tomar uma decisão.
+
+Se uma **lista** tiver 10 posições, com a função ``forEach`` será necessário acessar as 10 posições uma por uma e assim tomar uma decisão. Por exemplo: Imprimir todos os dados da **lista** um por um.
+
+> **Resumindo**: A função ``forEach`` faz um laço de repetição no array/lista, e assim pegar cada posição dessa lista uma por uma e assim _tomar uma decisão_.
+
+```
+var testUsers = <String>["Vinícius", "William", "Victor", "Rodrigo", "Marcelo", "Vitória", "Maria", "Matheus"];
+
+print(testUsers);
+
+testUsers.forEach((e) {
+  print("Usuário: $e");
+});
+```
+
+> **Nota**: A função ``forEach`` recebe uma função como parâmetro, e geralmente uma função é escrita com ``type name() {}``, mas como o ``forEach`` é uma **função** que chama/recebe outra _função_ como parâmetro, não é necessário passar o ``type name``, utilizando somente o ``() {}``.
+
+- O código acima retorna:
+    ```
+    Usuário: Vinícius
+    Usuário: William
+    Usuário: Victor
+    Usuário: Rodrigo
+    Usuário: Marcelo
+    Usuário: Vitória
+    Usuário: Maria
+    Usuário: Matheus
+    ```
+
+- Utilizando a função ``forEach`` para somar a média salarial semestral de um funcionário:
+
+```
+var semesterSalary = <int>[1000, 5000, 4000, 6000, 7000, 10000];
+var total = 0;
+
+semesterSalary.forEach((element) {
+  total += element;
+});
+
+print("Sua média salarial nos últimos 6 meses foi de: R\$${total / 6}");
+```
 
 
