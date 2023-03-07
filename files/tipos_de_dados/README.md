@@ -40,6 +40,7 @@
     - [List - RemoveAt:](#list---removeat)
     - [List - Clear:](#list---clear)
     - [List - Contains:](#list---contains)
+    - [List - ElementAt:](#list---elementat)
 
 ---
 
@@ -1082,3 +1083,25 @@ print(toCheck);    // Retorna: true
 ```
 
 - O código acima está verificando se o objeto **``Elena``** está presente na lista ``people``, no caso está sim presente, portanto a verificação retorna **``true``**.
+
+### List - ElementAt:
+
+A função ``elementAt`` serve para verificar qual elemento da lista está localizado no index específicado dentro dessa função.
+
+```
+print(people);    // Retorna: [Vinícius, Carol, Elena]
+
+final item = people.elementAt(0);
+print(item);    // Retorna: Vinícius
+```
+
+- No código acima, a função ``elementAt`` está pegando o objeto presente no index 0, no caso o valor **Vinícius**.
+
+> **Nota**: Ao invés de utilizar a função ``elementAt`` é possível pegar o valor no index específicado apenas passando o nome da lista + [index].
+    
+    ```
+    print(people);    // Retorna: [Vinícius, Carol, Elena]
+
+    final item = people[0];
+    print(item);    // Retorna: Vinícius
+    ```

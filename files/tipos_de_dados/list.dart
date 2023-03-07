@@ -83,4 +83,13 @@ void main() {
   var toCheck = people.contains("Elena");
 
   print(toCheck);    // Retorna: true
+
+  // Função elementAt
+  print(people);    // Retorna: [Vinícius, Carol, Elena]
+
+  final item = people.elementAt(0);
+  print(item);    // Retorna: Vinícius
+
+  final item1 = people[0];
+  print(item1);
 }
