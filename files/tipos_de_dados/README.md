@@ -44,6 +44,7 @@
     - [List - First Where:](#list---first-where)
     - [List - ForEach:](#list---foreach)
     - [List - IndexOf:](#list---indexof)
+    - [List - IndexWhere:](#list---indexwhere)
 
 ---
 
@@ -1210,3 +1211,22 @@ print(testUsers.indexOf("William"));    // Retorna: 1
 - Como a palavra **William** está na posição (index) 1 na lista, a função ``indexOf`` retorna essa posição na função ``print()``.
 
 > **Nota**: Quando procurado um objeto/item na lista que não existe/não está inserido na lista, com a função ``indexOf``, será retornado um _valor negativo_ **``-1``**.
+
+### List - IndexWhere:
+
+A função ``indexWhere`` serve para descobrir qual é o index de um elemento/objeto de uma lista, baseado em uma regra de negócio (**condição booleana**), baseado nessa condição definida, deve ser retornado o index desse elemento/objeto.
+
+```
+var testUsers = <String>["Vinícius", "William", "Victor", "Rodrigo", "Marcelo", "Vitória", "Maria", "Matheus"];
+
+final _usersIndex = testUsers.indexWhere((e) {
+  return e == "Victor";
+});
+print(_usersIndex);    // Retorna: 2
+```
+
+- Esse código serve para descobrir qual o index do elemento 'e' possui o valor 'Victor' no array/lista.
+
+A função ``indexWhere`` é responsável por retornar o **index** desse objeto dentro da lista/array.
+
+> **Nota**: Quando procurado um objeto/item na lista que não existe/não está inserido na lista, com a função ``indexWhere``, será retornado um _valor negativo_ **``-1``**.

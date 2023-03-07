@@ -128,4 +128,13 @@ void main() {
   print(testUsers);
 
   print(testUsers.indexOf("William"));
+
+  // Função indexWhere:
+  print(testUsers);
+
+  // Descubrindo qual o index do elemento 'e' possui o valor 'Victor' no array/lista. 
+  final _usersIndex = testUsers.indexWhere((e) {
+    return e == "Victor";
+  });
+  print(_usersIndex);    // Retorna: 2
 }
