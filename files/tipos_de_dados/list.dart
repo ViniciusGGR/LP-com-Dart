@@ -144,4 +144,12 @@ void main() {
 
   values.insert(0, 14);
   print(values);    // Retorna: [14, 1, 2, 3]
+
+  // Função insertAll:
+  final _list1 = <int>[1, 2, 3];
+  print(_list1);    // Retorna: [1, 2, 3]
+
+  _list1.insertAll(1, [22, 12, 14, 5]);
+  print(_list1);    // Retorna: [1, 22, 12, 14, 5, 2, 3]
+
 }

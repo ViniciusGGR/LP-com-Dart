@@ -46,6 +46,7 @@
     - [List - IndexOf:](#list---indexof)
     - [List - IndexWhere:](#list---indexwhere)
     - [List - Insert:](#list---insert)
+    - [List - InsertAll:](#list---insertall)
 
 ---
 
@@ -1247,3 +1248,19 @@ print(values);    // Retorna: [14, 1, 2, 3]
 - O código acima está inserindo o número **``14``** na posição (index) **0** da lista com o uso da função ``insert``.
 
 > **Nota**: A função ``insert`` não substitui os valores, por exemplo: essa função não troca um valor por outro, e sim move os valores já existentes na lista de posição (index).
+
+### List - InsertAll:
+
+A função ``insertAll`` serve para inserir (merge) de uma lista em outra lista já existente, só que através de um index (posição) especial, por exemplo: inserir essa **lista** a partir do index 2, ou do index 3...
+
+```
+final _list1 = <int>[1, 2, 3];
+print(_list1);    // Retorna: [1, 2, 3]
+
+_list1.insertAll(1, [22, 12, 14, 5]);
+print(_list1);    // Retorna: [1, 22, 12, 14, 5, 2, 3]
+```
+
+- Nesse código a função ``insertAll`` está inserindo a **nova lista** a partir do index **1**, assim a nova lista começa no index 1 e o restante dos objetos da primeira lista são movidos para os index(s) posteriores.
+
+> **Nota**: A função ``insertAll`` só move os objetos dentro da lista, essa função não exclui/substitui nenhum dado da lista.
