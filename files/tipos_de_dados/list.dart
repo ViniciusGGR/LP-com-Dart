@@ -92,4 +92,19 @@ void main() {
 
   final item1 = people[0];
   print(item1);
+
+  // Função firstWhere:
+  var testUsers = <String>["Vinícius", "William", "Victor", "Rodrigo", "Marcelo", "Vitória", "Maria", "Matheus"];
+
+  String? firstItem = testUsers.firstWhere((e) => e.startsWith("M"));
+  print(firstItem);
+
+  firstItem = testUsers.firstWhere((e) => e.endsWith("r"));
+  print(firstItem);
+
+  firstItem = testUsers.firstWhere((e) => e.contains("d"));
+  print(firstItem);
+
+  firstItem = testUsers.firstWhere((e) => e.contains("Elena"), orElse: () => "VAZIO");
+  print(firstItem);
 }

@@ -41,6 +41,7 @@
     - [List - Clear:](#list---clear)
     - [List - Contains:](#list---contains)
     - [List - ElementAt:](#list---elementat)
+    - [List - First Where:](#list---first-where)
 
 ---
 
@@ -1105,3 +1106,50 @@ print(item);    // Retorna: Vinícius
     final item = people[0];
     print(item);    // Retorna: Vinícius
     ```
+
+### List - First Where:
+
+A função ``firstWhere`` serve para pegar a primeira ocorrência de um pattern (padrão) com base na sua condição **booleana**, que se repete com frequência em uma lista.
+
+```
+var testUsers = <String>["Vinícius", "William", "Victor", "Rodrigo", "Marcelo", "Vitória", "Maria", "Matheus"];
+
+String? firstItem = testUsers.firstWhere((e) => e.startsWith("M"));
+
+print(firstItem);    // Retorna: Marcelo
+```
+
+- O código acima a condição é definida para registrar a primeira ocorrência que começa com a letra **``M``**.
+
+```
+var testUsers = <String>["Vinícius", "William", "Victor", "Rodrigo", "Marcelo", "Vitória", "Maria", "Matheus"];
+
+firstItem = testUsers.firstWhere((e) => e.endsWith("r"));
+
+print(firstItem);    // Retorna: Victor
+```
+
+- O código acima a condição é definida para registrar a primeira ocorrência que termina com a letra **``r``**.
+
+```
+var testUsers = <String>["Vinícius", "William", "Victor", "Rodrigo", "Marcelo", "Vitória", "Maria", "Matheus"];
+
+firstItem = testUsers.firstWhere((e) => e.contains("d"));
+
+print(firstItem);    // Retorna: Rodrigo
+```
+
+- O código acima a condição é definida para registrar a primeira ocorrência que contém a letra **``d``**.
+
+Se definido uma condição que não existe na **lista** a função ``firstWhere`` _retorna um erro_, mas é possível contornar isso com o ``orElse: () =>`` e retornar por exemplo, um valor "VAZIO".
+
+```
+firstItem = testUsers.firstWhere((e) => e.contains("Elena"), orElse: () => "VAZIO");
+print(firstItem);    // Retorna: VAZIO
+```
+
+- Como a condição definida não foi identificado o pattern (padrão), o ``orElse`` retorna o valor definido, no caso **``VAZIO``** assim evitando um erro ao executar o código.
+
+
+
+
