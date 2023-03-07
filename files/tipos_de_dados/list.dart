@@ -123,4 +123,9 @@ void main() {
     total += element;
   });
   print("Sua média salarial nos últimos 6 meses foi de: R\$${total / 6}");
+
+  // Função indexOf:
+  print(testUsers);
+
+  print(testUsers.indexOf("William"));
 }

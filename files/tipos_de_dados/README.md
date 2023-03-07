@@ -43,6 +43,7 @@
     - [List - ElementAt:](#list---elementat)
     - [List - First Where:](#list---first-where)
     - [List - ForEach:](#list---foreach)
+    - [List - IndexOf:](#list---indexof)
 
 ---
 
@@ -1196,4 +1197,16 @@ semesterSalary.forEach((element) {
 print("Sua média salarial nos últimos 6 meses foi de: R\$${total / 6}");
 ```
 
+### List - IndexOf:
 
+A função ``indexOf`` serve para identificar qual é o index/posição de um objeto presente em uma lista. 
+
+```
+var testUsers = <String>["Vinícius", "William", "Victor", "Rodrigo", "Marcelo", "Vitória", "Maria", "Matheus"];
+
+print(testUsers.indexOf("William"));    // Retorna: 1
+```
+
+- Como a palavra **William** está na posição (index) 1 na lista, a função ``indexOf`` retorna essa posição na função ``print()``.
+
+> **Nota**: Quando procurado um objeto/item na lista que não existe/não está inserido na lista, com a função ``indexOf``, será retornado um _valor negativo_ **``-1``**.
