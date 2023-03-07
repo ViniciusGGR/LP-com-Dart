@@ -45,6 +45,7 @@
     - [List - ForEach:](#list---foreach)
     - [List - IndexOf:](#list---indexof)
     - [List - IndexWhere:](#list---indexwhere)
+    - [List - Insert:](#list---insert)
 
 ---
 
@@ -1230,3 +1231,19 @@ print(_usersIndex);    // Retorna: 2
 A função ``indexWhere`` é responsável por retornar o **index** desse objeto dentro da lista/array.
 
 > **Nota**: Quando procurado um objeto/item na lista que não existe/não está inserido na lista, com a função ``indexWhere``, será retornado um _valor negativo_ **``-1``**.
+
+### List - Insert:
+
+A função ``insert`` serve para inserir um objeto em uma lista na posição (index) selecionada. Com essa função você define um novo objeto e qual posição (index) esse objeto vai ficar detro dessa lista.
+
+```
+final values = <int>[1, 2, 3];
+print(values);    // Retorna: [1, 2, 3]
+
+values.insert(0, 14);
+print(values);    // Retorna: [14, 1, 2, 3]
+```
+
+- O código acima está inserindo o número **``14``** na posição (index) **0** da lista com o uso da função ``insert``.
+
+> **Nota**: A função ``insert`` não substitui os valores, por exemplo: essa função não troca um valor por outro, e sim move os valores já existentes na lista de posição (index).

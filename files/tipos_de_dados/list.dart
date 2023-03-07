@@ -137,4 +137,11 @@ void main() {
     return e == "Victor";
   });
   print(_usersIndex);    // Retorna: 2
+
+  // Função insert:
+  final values = <int>[1, 2, 3];
+  print(values);    // Retorna: [1, 2, 3]
+
+  values.insert(0, 14);
+  print(values);    // Retorna: [14, 1, 2, 3]
 }
