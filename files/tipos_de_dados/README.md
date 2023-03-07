@@ -47,6 +47,7 @@
     - [List - IndexWhere:](#list---indexwhere)
     - [List - Insert:](#list---insert)
     - [List - InsertAll:](#list---insertall)
+    - [List - Exercícios:](#list---exercícios)
 
 ---
 
@@ -1264,3 +1265,11 @@ print(_list1);    // Retorna: [1, 22, 12, 14, 5, 2, 3]
 - Nesse código a função ``insertAll`` está inserindo a **nova lista** a partir do index **1**, assim a nova lista começa no index 1 e o restante dos objetos da primeira lista são movidos para os index(s) posteriores.
 
 > **Nota**: A função ``insertAll`` só move os objetos dentro da lista, essa função não exclui/substitui nenhum dado da lista.
+
+### List - Exercícios:
+
+Descobrindo a média de uma determinada quantidade de números.
+
+[**Arquivo - _list_exercise.dart_**](./list_exercise.dart)
+
+
