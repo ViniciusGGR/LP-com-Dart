@@ -55,4 +55,19 @@ void main() {
 
   print(mapA);    // Retorna: {name: Vinícius, lastName: Gabriel, phone: 00000000000, address: {street: Street do Vinícius}}
 
+  // Função clear:
+  final mapC = <String, dynamic>{
+    "name": "Vinícius Gabriel",
+    "age": 22,
+    "number": "00000000000",
+    "cpf": "000.000.000-00",
+    "rg": "0000000"
+  };
+
+  print(mapC);
+
+  // clear:
+  mapC.clear();
+
+  print(mapC);
 }

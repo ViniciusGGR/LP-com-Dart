@@ -50,6 +50,7 @@
     - [List - Exercícios:](#list---exercícios)
 - [Map - Introdução](#map---introdução)
     - [Map - AddAll e AddEntry:](#map---addall-e-addentry)
+    - [Map - Clear:](#map---clear)
 
 ---
 
@@ -1390,3 +1391,23 @@ print(mapA);    // Retorna: {name: Vinícius, lastName: Gabriel, phone: 00000000
 - Utilizando o operador ``addEntry`` para fazer um (merge) de dados, utilizando um ``Map``.
 
 > **Nota**: Para fazer o (_merge_) os tipos dos dois ``Maps`` devem ser iguais, por isso é importante definir os tipos das **_chaves(s):valor(es)_**.
+
+### Map - Clear:
+
+A função ``clear`` serve para "limpar/excluir os dados" de um ``Map``. Um exemplo de uso do ``clear`` é em variáveis **``final``** que não é possível atribuir um novo valor/``Map``.
+
+```
+final mapC = <String, dynamic>{
+  "name": "Vinícius Gabriel",
+  "age": 22,
+  "number": "00000000000",
+  "cpf": "000.000.000-00",
+  "rg": "0000000"
+};
+
+print(mapC);    // Retorna: {name: Vinícius Gabriel, age: 22, number: 00000000000, cpf: 000.000.000-00, rg: 0000000}
+
+mapC.clear();
+
+print(mapC);    // Retorna: {}
+```
