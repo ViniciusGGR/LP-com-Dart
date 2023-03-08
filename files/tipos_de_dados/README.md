@@ -48,6 +48,7 @@
     - [List - Insert:](#list---insert)
     - [List - InsertAll:](#list---insertall)
     - [List - Exercícios:](#list---exercícios)
+- [Map - Introdução](#map---introdução)
 
 ---
 
@@ -1272,4 +1273,83 @@ Descobrindo a média de uma determinada quantidade de números.
 
 [**Arquivo - _list_exercise.dart_**](./list_exercise.dart)
 
+---
 
+## Map - Introdução
+
+O ``Map`` é um tipo/estrutura de dados e é um dos objetos mais importantes dentro de um projeto.
+
+O ``Map`` é uma estrutura de dados que possui uma **_chave:valor_**.
+
+- Vantagem da estrutura de dados ``Map``:
+    - Acesso direto, ou seja, por exemplo: O dado de CPF do usuário - **CPF** (Chave) : **000.000.000-00** (Valor). O dado de RG do usuário - **RG** (Chave) : **0000000** (Valor).
+
+> **JSON**: É basicamente uma representação, que utiliza o ``Map`` (esquema de _chave:valor_) para representar um objeto e esse objeto pode ser interpretado independente da linguagem.
+
+Declarando um ``Map``:
+
+```
+final user = {
+    
+};
+```
+
+- Normalmente se utiliza/declara a **chave** como ``String``, mas é possível utilizar/criar como quiser.
+
+Uma outra forma de inicializar um ``Map`` é a seguinte:
+
+```
+final userTest = Map();
+userTest.addAll({
+    
+});
+```
+
+- Essa forma utiliza o atributo ``addAll`` para adicionar as **_chave(s):valor(es)_** ao ``Map``.
+    ```
+    final userTest = Map();
+    userTest.addAll({
+      "cpf": "000.000.000-00",
+      "rg": "0000000",
+    });
+
+    userTest.addAll({
+      "name": "UserName",
+      // Uma lista dentro de um Map.
+      "phones": ["01010101010", "12121212121", "23232323232"],
+    });
+
+    print(userTest);    // Retorna: {cpf: 000.000.000-00, rg: 0000000, name: UserName}
+
+    print(userTest["cpf"]);     // Retorna: 000.000.000-00
+    print(userTest["rg"]);      // Retorna: 0000000
+    print(userTest["name"]);    // Retorna: UserName
+
+    print(userTest["phones"]);  // Retorna: [01010101010, 12121212121, 23232323232]
+    ```
+    - Dentro do ``Map`` é possível adicionar um **conjunto** de dados que pertencem a uma única **_chave_**
+
+Criando **_chave(s):valor(es)_** dentro do ``Map``
+
+```
+final user = {
+  "name": "UserName",
+  "cpf": "000.000.000-00",
+  "rg": "0000000",
+};
+```
+
+Acessando o dado de **CPF** e **RG** no ``Map`` através da suas **_chave(s)_**.
+
+```
+print(user["cpf"]);    // Retorna: 000.000.000-00
+print(user["rg"]);     // Retorna: 0000000
+```
+
+> **Nota**: Um ``Map`` pode receber outro ``Map``. Então, com essa estrutura de dados é possível criar/construir uma árvore gigante de dados.
+
+Uma boa prática é definir um tipo para a **_chave_** (Normalmente seu tipo é ``String``) e os **_valores_** podem ser dinâmicos.
+
+```
+final userTest = Map<String, dynamic>();
+```
