@@ -30,4 +30,29 @@ void main() {
 
   print(userTest["phones"]);
 
+  // Operadores addAll e addEntry:
+  final mapA = <String, dynamic>{
+    "name": "Vinícius",
+    "lastName": "Gabriel",
+  };
+  print(mapA);    // Retorna: {name: Vinícius, lastName: Gabriel}
+
+  // addAll:
+  mapA.addAll({
+    "phone": "00000000000",
+  });
+  print(mapA);    // Retorna: {name: Vinícius, lastName: Gabriel, phone: 00000000000}
+
+  final mapB = <String, dynamic>{
+    "address": {
+      "street": "Street do Vinícius"
+    },
+  };
+  print(mapB);
+
+  // addEntry:
+  mapA.addEntries(mapB.entries);
+
+  print(mapA);    // Retorna: {name: Vinícius, lastName: Gabriel, phone: 00000000000, address: {street: Street do Vinícius}}
+
 }

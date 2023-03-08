@@ -49,6 +49,7 @@
     - [List - InsertAll:](#list---insertall)
     - [List - Exercícios:](#list---exercícios)
 - [Map - Introdução](#map---introdução)
+    - [Map - AddAll e AddEntry:](#map---addall-e-addentry)
 
 ---
 
@@ -1353,3 +1354,39 @@ Uma boa prática é definir um tipo para a **_chave_** (Normalmente seu tipo é 
 ```
 final userTest = Map<String, dynamic>();
 ```
+
+### Map - AddAll e AddEntry:
+
+Operações de ``add``, mas uma dessas operações é considerada de (merge), ou seja, adicionar um ``Map`` em outro ``Map``.
+
+```
+final mapA = <String, dynamic>{
+  "name": "Vinícius",
+  "lastName": "Gabriel",
+};
+print(mapA);    // Retorna: {name: Vinícius, lastName: Gabriel}
+
+mapA.addAll({
+  "phone": "00000000000",
+});
+print(mapA);    // Retorna: {name: Vinícius, lastName: Gabriel, phone: 00000000000}
+```
+
+- Utilizando o operador ``addAll`` para adicionar uma nova **_chave:valor_** ao ``Map`` já existente **``mapA``**.
+
+```
+final mapB = <String, dynamic>{
+  "address": {
+    "street": "Street do Vinícius"
+  },
+};
+print(mapB);
+
+mapA.addEntries(mapB.entries);
+
+print(mapA);    // Retorna: {name: Vinícius, lastName: Gabriel, phone: 00000000000, address: {street: Street do Vinícius}}
+```
+
+- Utilizando o operador ``addEntry`` para fazer um (merge) de dados, utilizando um ``Map``.
+
+> **Nota**: Para fazer o (_merge_) os tipos dos dois ``Maps`` devem ser iguais, por isso é importante definir os tipos das **_chaves(s):valor(es)_**.
