@@ -53,6 +53,7 @@
     - [Map - Clear:](#map---clear)
     - [Map - Contains:](#map---contains)
     - [Map - RemoveWhere:](#map---removewhere)
+    - [Map - Update e UpdateAll:](#map---update-e-updateall)
 
 ---
 
@@ -1461,3 +1462,42 @@ print(mapD);    // Retorna: {firstName: Vinícius, lastName: Gabriel}
 - A função ``remove()`` é necessário saber a **_chave_** que será removida, sem a **_chave_** não é possível remover esse item do ``Map``.
 
 - A função ``removeWhere()`` "atende" a condição (**booleana**) definida de se um **valor** for igual a _Masculino_, essa **_chave:valor_** será excluída.
+
+### Map - Update e UpdateAll:
+
+As funções de ``update`` e ``updateAll`` servem para atualizar os dados do ``Map``.
+
+```
+final mapD = <String, dynamic>{
+  "firstName": "Vinícius",
+  "lastName": "Gabriel",
+};
+
+mapD.update("firstName", (value) => "Thiago");
+print(mapD);    // Retorna: {firstName: Thiago, lastName: Gabriel}
+```
+
+- Atualizando um dado do ``Map`` com a função ``update()``.
+    ```
+    mapD["firstName"] = "David";
+    print(mapD);    // Retorna: {firstName: David, lastName: Gabriel}
+    ```
+    - Existe também a maneira/acesso "**direto**" de atualizar um dado dentro de um ``Map``. Essa forma funciona da mesma forma que a função ``update()``.
+
+```
+final mapD = <String, dynamic>{
+  "firstName": "Vinícius",
+  "lastName": "Gabriel",
+};
+
+mapD.updateAll((key, value) => "#");
+print(mapD);    // Retorna: {firstName: #, lastName: #}
+```
+
+- A função ``updateAll()`` atualiza todos os dados/_valores_ das chaves para o valor definido, no caso, o valor **``#``**.
+    - Também é possível criar uma condição dentro dessa função:
+    ```
+    mapD.updateAll((key, value) => key == "firstName" ? "#" : value);
+    print(mapD);    // Retorna: {firstName: #, lastName: Gabriel}
+    ```
+    - Nesse exemplo se a **_chave_** for igual a ``firstName``, o valor dessa chave deve retornar **``#``** e as outras **_chave(s)_** devem retornar seus valores normais.

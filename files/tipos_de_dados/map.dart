@@ -93,4 +93,16 @@ void main() {
   // Definindo uma condição de se um valor for igual a 'Masculino' essa chave:valor será excluída.
   mapD.removeWhere((key, value) => value == "Masculino");
   print(mapD);    // Retorna: {firstName: Vinícius, lastName: Gabriel}
+
+  // Função update:
+  mapD.update("firstName", (value) => "Thiago");
+  print(mapD);
+
+  // Maneira 'direta' de atualizar um dado no 'Map'.
+  mapD["firstName"] = "David";
+  print(mapD);
+
+  // Função updateAll:
+  mapD.updateAll((key, value) => key == "firstName" ? "#" : value);
+  print(mapD);
 }
