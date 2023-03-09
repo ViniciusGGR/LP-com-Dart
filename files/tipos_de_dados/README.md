@@ -52,6 +52,7 @@
     - [Map - AddAll e AddEntry:](#map---addall-e-addentry)
     - [Map - Clear:](#map---clear)
     - [Map - Contains:](#map---contains)
+    - [Map - RemoveWhere:](#map---removewhere)
 
 ---
 
@@ -1435,3 +1436,28 @@ print(mapA.containsValue("Vinícius"));    // Retorna: true
 - A função ``containsKey()`` serve para pesquisar se uma **_chave_** existe dentro do ``Map`` e retorna um valor **booleano**.
 
 - A função ``containsValue()`` serve para pesquisar se um **_valor_** existe dentro do ``Map`` e retorna um valor **booleano**.
+
+### Map - RemoveWhere:
+
+A função ``removeWhere`` serve para remover uma **_chave:valor_** de um ``Map``. Essa função também permite criar uma _condição de remoção_.
+
+```
+final mapD = <String, dynamic>{
+  "firstName": "Vinícius",
+  "lastName": "Gabriel",
+  "age": 22,
+  "gender": "Masculino",
+};
+
+print(mapD);    // Retorna: {firstName: Vinícius, lastName: Gabriel, age: 22,gender: Masculino}
+
+mapD.remove("age");
+print(mapD);    // Retorna: {firstName: Vinícius, lastName: Gabriel, gender: Masculino}
+
+mapD.removeWhere((key, value) => value == "Masculino");
+print(mapD);    // Retorna: {firstName: Vinícius, lastName: Gabriel}
+```
+
+- A função ``remove()`` é necessário saber a **_chave_** que será removida, sem a **_chave_** não é possível remover esse item do ``Map``.
+
+- A função ``removeWhere()`` "atende" a condição (**booleana**) definida de se um **valor** for igual a _Masculino_, essa **_chave:valor_** será excluída.

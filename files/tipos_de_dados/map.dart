@@ -75,4 +75,22 @@ void main() {
   print(mapA.containsKey("name"));
   
   print(mapA.containsValue("Vinícius"));
+
+  // Função removeWhere:
+  final mapD = <String, dynamic>{
+    "firstName": "Vinícius",
+    "lastName": "Gabriel",
+    "age": 22,
+    "gender": "Masculino",
+  };
+
+  print(mapD);    // Retorna: {firstName: Vinícius, lastName: Gabriel, age: 22, gender: Masculino}
+
+  // Removendo a chave:valor 'age'.
+  mapD.remove("age");
+  print(mapD);    // Retorna: {firstName: Vinícius, lastName: Gabriel, gender: Masculino}
+
+  // Definindo uma condição de se um valor for igual a 'Masculino' essa chave:valor será excluída.
+  mapD.removeWhere((key, value) => value == "Masculino");
+  print(mapD);    // Retorna: {firstName: Vinícius, lastName: Gabriel}
 }
