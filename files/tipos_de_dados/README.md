@@ -51,6 +51,7 @@
 - [Map - Introdução](#map---introdução)
     - [Map - AddAll e AddEntry:](#map---addall-e-addentry)
     - [Map - Clear:](#map---clear)
+    - [Map - Contains:](#map---contains)
 
 ---
 
@@ -1411,3 +1412,26 @@ mapC.clear();
 
 print(mapC);    // Retorna: {}
 ```
+
+### Map - Contains:
+
+A função ``contains`` serve para pesquisar/verificar se aquelas chave(s)/valor(es) pesquisados existem dentro do ``Map``.
+
+```
+final mapA = <String, dynamic>{
+  name: Vinícius,
+  lastName: Gabriel,
+  phone: 00000000000,
+  address: {
+    street: Street do Vinícius
+  };
+};
+
+print(mapA.containsKey("name"));    // Retorna: true
+
+print(mapA.containsValue("Vinícius"));    // Retorna: true
+```
+
+- A função ``containsKey()`` serve para pesquisar se uma **_chave_** existe dentro do ``Map`` e retorna um valor **booleano**.
+
+- A função ``containsValue()`` serve para pesquisar se um **_valor_** existe dentro do ``Map`` e retorna um valor **booleano**.

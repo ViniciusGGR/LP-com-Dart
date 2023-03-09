@@ -70,4 +70,9 @@ void main() {
   mapC.clear();
 
   print(mapC);
+
+  // Atributo contains:
+  print(mapA.containsKey("name"));
+  
+  print(mapA.containsValue("Vinícius"));
 }
