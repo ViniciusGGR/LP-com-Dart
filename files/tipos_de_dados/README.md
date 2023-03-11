@@ -54,6 +54,7 @@
     - [Map - Contains:](#map---contains)
     - [Map - RemoveWhere:](#map---removewhere)
     - [Map - Update e UpdateAll:](#map---update-e-updateall)
+- [Stream](#stream)
 
 ---
 
@@ -1501,3 +1502,19 @@ print(mapD);    // Retorna: {firstName: #, lastName: #}
     print(mapD);    // Retorna: {firstName: #, lastName: Gabriel}
     ```
     - Nesse exemplo se a **_chave_** for igual a ``firstName``, o valor dessa chave deve retornar **``#``** e as outras **_chave(s)_** devem retornar seus valores normais.
+
+---
+
+## Stream
+
+O método ``Stream`` se refere a _fluxo de dados_, por exemplo: O streaming de vídeo, no final é criado uma "``Stream``" para pegar o _fluxo de dados_, ou seja, o fluxo do vídeo/frames do vídeo e assim fazer a reprodução do vídeo na tela do usuário.
+
+Utilizando o ``Stream`` para criar/simular um _fluxo de dados_ no Dart.
+
+[**Arquivo - _stream.dart_**](./stream.dart)
+
+```
+
+```
+
+---
