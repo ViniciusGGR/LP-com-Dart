@@ -3,6 +3,7 @@
 ### Sumário:
 
 - [And](#and)
+- [Or](#or)
 
 ---
 
@@ -11,6 +12,8 @@
 Operador de lógica ``and`` serve para executar operações lógicas, por exemplo: comparação e satisfação de alguma coisa. O operador ``and`` é representado pelo **``&&``**.
 
 - Utilizando o operador ``and`` - Normalmente se tem dois operadores matemáticos (<, >, <= , =>, ==, !=), e assim se utiliza os operadores lógicos, como o ``and`` para executar uma comparação entre os operadores matemáticos.
+
+[**Arquivo - _and.dart_**](./and.dart)
 
 ```
 var a = 1;
@@ -31,4 +34,9 @@ if ((a > 0) && (b < 3)) {
 Resumindo: Para o operador ``and`` ser executado, todas as expressões devem retornar ``true``, somente assim a condição será executada.
 
 O operador ``and`` é muito utilizado para quando é preciso fazer mais de uma comparação, por exemplo: comparar que o salário da pessoa tem que ser maior que R$ 1.200,00 **E** que a pessoa tem que ocupar a posição de Estagiário e somente assim será realizado o pagamento.
+
+---
+
+## Or
+
 
