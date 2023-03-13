@@ -1,6 +1,6 @@
 # Operadores de Lógica
 
-### Sumário
+### Sumário:
 
 - [And](#and)
 
