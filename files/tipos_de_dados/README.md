@@ -1514,7 +1514,23 @@ Utilizando o ``Stream`` para criar/simular um _fluxo de dados_ no Dart.
 [**Arquivo - _stream.dart_**](./stream.dart)
 
 ```
+void main() {
+  streamFunction().listen((event) {
+    print("WORD: ${event}");
+  });
+}
 
+Stream<String> streamFunction() async* {
+  final word = "Vinícius";
+  final list = word.split("");
+  for (var item in list) {
+    yield item;
+  }
+}
 ```
+
+- Quando se trabalha com o método ``Stream``, deve-se trabalhar com a classe abstrata **``Stream``**. Criando/Declarando uma ``Stream``: ``final stream = Stream.value(value);``.
+
+> **Dica**: É mais comum criar uma função que retorna uma ``Stream``, por que assim você terá um _fluxo de dados_
 
 ---
